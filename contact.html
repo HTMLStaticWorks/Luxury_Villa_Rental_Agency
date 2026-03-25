@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Our Luxury Advisors | LuxeVillas</title>
+    <meta name="description" content="Speak with our dedicated travel advisors to plan your perfect Caribbean getaway.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxevillas.caribbean/contact.html">
+    <meta property="og:title" content="LuxeVillas - Contact Us">
+    <meta property="og:description" content="Let us help you find the retreat of your dreams.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="site-header scrolled border-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="site-logo">
+                </a>
+                <div class="d-flex align-items-center d-xl-none gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-2" id="mob-rtl-toggle"
+                        style="font-size: 0.75rem;">RTL</button>
+                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 32px; height: 32px;"><i
+                            class="bi bi-moon"></i></button>
+                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="villas.html">Villas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="rtl-toggle">RTL</button>
+                        <button class="theme-toggle-btn" id="theme-toggle"><i class="bi bi-moon"></i></button>
+                        <a href="register.html" class="nav-btn btn-primary">Sign Up</a>
+                        <a href="dashboard.html" class="nav-btn btn-primary">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 fs-5">
+                <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="index-2.html">Home 2</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="villas.html">Villas</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="journal.html">Journal</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 pt-4 border-top d-flex flex-column gap-3">
+
+                <a href="register.html" class="btn btn-primary w-100 rounded-pill py-2">Sign Up</a>
+                <a href="dashboard.html" class="btn btn-primary w-100 rounded-pill py-2">Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="page-header py-5 position-relative overflow-hidden text-center text-white"
+        style="background: linear-gradient(rgba(10,159,165,0.2), rgba(15,23,42,0.8)), url('https://images.unsplash.com/photo-1543489822-c49534f3271f?auto=format&fit=crop&w=1920&q=80') center/cover; min-height: 400px; display: flex; align-items: center;">
+        <div class="container py-4 mt-5 animate-up position-relative z-3">
+            <h1 class="display-5 mb-3 fw-bold text-white">Contact Us</h1>
+            <p class="lead text-white fw-medium animate-fade">Speak with our dedicated travel advisors.</p>
+        </div>
+    </section>
+
+    <section class="section-padding position-relative overflow-hidden">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container animate-up">
+            <div class="row g-5">
+                <div class="col-lg-6 animate-up">
+                    <div class="bg-body border rounded-4 p-5 shadow-sm h-100">
+                        <h3 class="mb-4 text-center">Send us an inquiry</h3>
+                        <form class="needs-validation" novalidate
+                            onsubmit="event.preventDefault(); this.classList.add('was-validated');">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small fw-bold">First Name</label>
+                                    <input type="text" class="form-control" placeholder="John" required>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small fw-bold">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Doe" required>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label text-muted small fw-bold">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="john@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label text-muted small fw-bold">Destination of Interest</label>
+                                    <select class="form-select p-3 rounded-3" required>
+                                        <option value="">Not sure yet</option>
+                                        <option value="st-barts">St. Barts</option>
+                                        <option value="turks">Turks & Caicos</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a destination.</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label text-muted small fw-bold">Message</label>
+                                    <textarea class="form-control" rows="5"
+                                        placeholder="Tell us about your ideal vacation..." required></textarea>
+                                    <div class="invalid-feedback">Please enter your message.</div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-custom btn-primary w-100">Submit Inquiry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up delay-200">
+                    <div class="h-100 d-flex flex-column">
+                        <div class="mb-5">
+                            <h3 class="mb-4">Headquarters</h3>
+                            <ul class="list-unstyled text-muted d-flex flex-column gap-4">
+                                <li class="d-flex align-items-start gap-4">
+                                    <div class="text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="background-color: var(--pr-color); width: 60px; height: 60px; flex-shrink: 0;">
+                                        <i class="bi bi-geo-alt fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-dark mb-1">Office Address</h5>
+                                        <p class="m-0">123 Ocean Blvd, Suite 400<br>St. Barts, Caribbean 97133</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start gap-4">
+                                    <div class="text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="background-color: var(--pr-color); width: 60px; height: 60px; flex-shrink: 0;">
+                                        <i class="bi bi-telephone fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-dark mb-1">Phone Numbers</h5>
+                                        <p class="m-0">Toll-Free: +1 (800) 123-4567<br>Direct: +590 590 12 34 56</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start gap-4">
+                                    <div class="text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="background-color: var(--pr-color); width: 60px; height: 60px; flex-shrink: 0;">
+                                        <i class="bi bi-envelope fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-dark mb-1">Email Adresses</h5>
+                                        <p class="m-0">Reservations: concierge@luxevillas.com<br>Support:
+                                            support@luxevillas.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="mt-5 pt-4 border-top">
+                                <h5 class="mb-3 text-dark">Follow Us</h5>
+                                <div class="social-links justify-content-start">
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="flex-grow-1 bg-light rounded-4 border overflow-hidden position-relative min-h-300">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113645.74811776512!2d-62.92348611100342!3d17.897379768670866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0e74f3583ae5d5%3A0xc6cbfa8ec2fe2944!2sSaint-Barth%C3%A9lemy!5e0!3m2!1sen!2sus!4v1700684074251!5m2!1sen!2sus"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5 mb-5 pb-4 border-bottom border-secondary border-opacity-50">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <a href="index.html" class="d-inline-block mb-lg-0 mb-4 text-decoration-none">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" height="45" class="site-logo">
+                    </a>
+                    <p class="text-white-50 mb-4 pe-lg-4">Experience unparalleled luxury, private chefs, and
+                        personalized itineraries at the finest vacation rentals in the Caribbean.</p>
+                    <div class="social-links justify-content-center justify-content-lg-start">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="services.html">Private Chef</a></li>
+                        <li><a href="services.html">Yacht Charters</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Concierge Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title text-center text-lg-start">Newsletter</h5>
+                    <p class="text-white-50 text-center text-lg-start small mb-3">Subscribe for exclusive offers and
+                        luxury inspiration.</p>
+                    <form class="d-flex max-w-sm mx-auto mx-lg-0">
+                        <input type="email" class="form-control border-secondary text-white"
+                            style="background-color: rgba(255,255,255,0.05);" placeholder="Enter your email address..."
+                            required>
+                        <button class="btn btn-warning ms-2 fw-bold" type="submit"><i
+                                class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-white-50 small">
+                &copy; 2026 LuxeVillas. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

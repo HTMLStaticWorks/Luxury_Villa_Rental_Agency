@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | LuxeVillas</title>
+    <meta name="description" content="Learn about our decade-long journey to redefining Caribbean luxury hospitality.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxevillas.caribbean/about.html">
+    <meta property="og:title" content="LuxeVillas - Our Story">
+    <meta property="og:description" content="How LuxeVillas became the premier choice for exclusive island retreats.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-brand">LuxeVillas</div>
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header scrolled border-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="site-logo">
+                </a>
+                <div class="d-flex align-items-center d-xl-none gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-2" id="mob-rtl-toggle"
+                        style="font-size: 0.75rem;">RTL</button>
+                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 32px; height: 32px;"><i
+                            class="bi bi-moon"></i></button>
+                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="villas.html">Villas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="rtl-toggle">RTL</button>
+                        <button class="theme-toggle-btn" id="theme-toggle"><i class="bi bi-moon"></i></button>
+                        <a href="register.html" class="nav-btn btn-primary">Sign Up</a>
+                        <a href="dashboard.html" class="nav-btn btn-primary">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 fs-5">
+                <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="index-2.html">Home 2</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="villas.html">Villas</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="journal.html">Journal</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 pt-4 border-top d-flex flex-column gap-3">
+
+                <a href="register.html" class="btn btn-primary w-100 rounded-pill py-2">Sign Up</a>
+                <a href="dashboard.html" class="btn btn-primary w-100 rounded-pill py-2">Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Page Header -->
+    <section class="page-header py-5 position-relative overflow-hidden text-center text-white"
+        style="background: linear-gradient(rgba(10,159,165,0.2), rgba(15,23,42,0.8)), url('images/about-hero.png') center/cover; min-height: 400px; display: flex; align-items: center;">
+        <div class="container py-5 mt-5 animate-up position-relative z-3">
+            <h1 class="display-4 fw-bold text-white">Our Story</h1>
+            <p class="lead text-white fw-light mb-4 mx-auto animate-up delay-100" style="max-width: 600px;">A decade of
+                redefining Caribbean luxury and bespoke island escapes.</p>
+
+        </div>
+    </section>
+
+    <!-- 2. Content Section -->
+    <section class="section-padding">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 animate-fade">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Resort staff" class="img-fluid rounded-4 shadow-lg">
+                        <div class="rotating-text-circle d-none d-md-flex">
+                            <svg viewBox="0 0 200 200">
+                                <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"
+                                    fill="transparent" />
+                                <text class="circle-text">
+                                    <textPath href="#circlePath" startOffset="0%">
+                                        15+ YEARS OF LUXURY • 15+ YEARS OF LUXURY • 15+ YEARS OF LUXURY •
+                                    </textPath>
+                                </text>
+                            </svg>
+                            <div class="circle-center">
+                                <span class="fw-bold">15+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-up delay-200 ps-lg-5">
+                    <span class="section-subtitle">The Vision</span>
+                    <h2 class="mb-4">Redefining Caribbean Luxury Escapes</h2>
+                    <p class="text-muted mb-4">Founded in 2010, LuxeVillas began with a simple vision: to bridge the gap
+                        between five-star resort amenities and the unparalleled privacy of exclusive estate living.</p>
+                    <p class="text-muted mb-4">Today, we represent the top 1% of luxury properties across the Caribbean
+                        basin, offering an unmatched portfolio built on deep, trusting relationships with property
+                        owners and repeat guests who demand nothing but perfection.</p>
+
+                    <div class="mt-5 d-flex gap-4">
+                        <div>
+                            <h3 class="font-heading text-primary m-0">99%</h3>
+                            <small class="text-muted text-uppercase fw-bold letter-spacing-1">Satisfaction</small>
+                        </div>
+                        <div class="border-start ps-4">
+                            <h3 class="font-heading text-primary m-0">10k+</h3>
+                            <small class="text-muted text-uppercase fw-bold letter-spacing-1">Happy Guests</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. What We Do For Travelers (Modern Grid) -->
+    <section class="traveler-services-section">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container">
+            <div class="text-center mb-5 animate-up">
+                <span class="section-subtitle">For Travelers</span>
+                <h2 class="display-5 fw-medium"
+                    style="font-family: var(--font-serif); max-width: 800px; margin: 0 auto;">We curate immersive island
+                    journeys that redefine the possible.</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 animate-up delay-100">
+                    <div class="service-card-modern">
+
+                        <div class="service-icon-wrap">
+                            <div class="service-icon-bg"></div>
+                            <i class="bi bi-flower1"></i>
+                        </div>
+                        <h4>Culinary Curation</h4>
+                        <p>From Michelin-trained private chefs to secret local dining spots, we map the soul of the
+                            islands through taste and tradition.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 animate-up delay-200">
+                    <div class="service-card-modern">
+                        <div class="service-icon-wrap">
+                            <div class="service-icon-bg"></div>
+                            <i class="bi bi-shield-shaded"></i>
+                        </div>
+                        <h4>Elite Sanctity</h4>
+                        <p>Hand-picked estates offering total privacy, state-of-the-art security, and the Caribbean's
+                            most exclusive and secure postcodes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 animate-up delay-300">
+                    <div class="service-card-modern">
+                        <div class="service-icon-wrap">
+                            <div class="service-icon-bg"></div>
+                            <i class="bi bi-compass"></i>
+                        </div>
+                        <h4>Personal Concierge</h4>
+                        <p>A dedicated island advisor at your fingertips, 24/7, to manage every whim from yacht charters
+                            to last-minute spa days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Editorial Destinations Section (Asymmetric) -->
+    <section class="editorial-destinations">
+        <div class="editorial-bg-text">DESTINATIONS</div>
+        <div class="container pb-5">
+            <div class="editorial-grid">
+                <div class="editorial-img-stack animate-fade">
+                    <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1000&q=80"
+                        alt="Caribbean Coast" class="editorial-img-main">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Villa View"
+                        class="editorial-img-sub">
+                </div>
+                <div class="editorial-content-wrap animate-up delay-200">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <img src="images/leaf-premium.svg" alt="" width="30" height="30" class="opacity-75">
+                        <span class="section-subtitle mb-0">Beyond the Horizon</span>
+                    </div>
+                    <h2 class="display-4 mb-4" style="font-family: var(--font-serif);">Explore the Caribbean's most
+                        guarded secrets.</h2>
+                    <p class="lead text-muted mb-5">Our collection extends beyond the map. We offer access to private
+                        island clusters and hidden mountain retreats unavailable on any public listing.</p>
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-primary" style="font-size: 1.25rem;">01.</span>
+                            <span class="text-dark fw-medium">Private Jet & Yacht Coordination</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-primary" style="font-size: 1.25rem;">02.</span>
+                            <span class="text-dark fw-medium">Exclusive Island Buyouts</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-primary" style="font-size: 1.25rem;">03.</span>
+                            <span class="text-dark fw-medium">Bespoke Cultural Integration</span>
+                        </div>
+                    </div>
+                    <a href="destinations.html" class="btn-custom btn-primary mt-5 px-5">Discover Secrets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Core Values -->
+    <section class="section-padding bg-light position-relative overflow-hidden">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container text-center animate-up">
+            <span class="section-subtitle">Why Us</span>
+            <h2 class="mb-5">Our Core Values</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 animate-up delay-100">
+                    <div class="bg-white p-5 rounded-4 shadow-sm h-100 border">
+                        <i class="bi bi-gem fs-1 text-warning mb-4 d-block"></i>
+                        <h4 class="mb-3">Excellence</h4>
+                        <p class="text-muted small">We accept only the extraordinary. Every property is rigorously
+                            inspected to ensure perfection.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-up delay-200">
+                    <div class="bg-white p-5 rounded-4 shadow-sm h-100 border">
+                        <i class="bi bi-person-heart fs-1 text-warning mb-4 d-block"></i>
+                        <h4 class="mb-3">Personalization</h4>
+                        <p class="text-muted small">Your vacation, tailor-made. Our concierge anticipates your needs
+                            before you even realize them.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-up delay-300">
+                    <div class="bg-white p-5 rounded-4 shadow-sm h-100 border">
+                        <i class="bi bi-shield-check fs-1 text-warning mb-4 d-block"></i>
+                        <h4 class="mb-3">Discretion</h4>
+                        <p class="text-muted small">We value your privacy implicitly, offering secure, secluded
+                            properties for high-profile clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Inner Circle Section (New Redesign) -->
+    <section class="section-padding bg-light position-relative overflow-hidden">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="" style="opacity: 0.1;">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="" style="opacity: 0.1;">
+        </div>
+        <div class="container animate-up">
+            <div class="inner-circle-box rounded-4 shadow-lg overflow-hidden border">
+                <div class="row g-0">
+                    <div class="col-lg-7 p-5 d-flex flex-column justify-content-center bg-white">
+                        <span class="section-subtitle">EXCLUSIVE ACCESS</span>
+                        <h2 class="display-4 mb-4" style="font-family: var(--font-serif); color: var(--text-color);">
+                            Join
+                            Our Inner Circle</h2>
+                        <p class="lead text-muted mb-5">Receive priority notifications for newly listed estates, private
+                            island events, and the latest Caribbean insights curated by our founders.</p>
+                        <form class="newsletter-form-premium">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address..." required>
+                                <button class="btn-custom btn-primary px-4" type="submit">Join Now</button>
+                            </div>
+                            <p class="small text-muted mt-3 mb-0">*We value your privacy implicitly. No spam, only
+                                luxury.</p>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="inner-circle-img"
+                            style="background: url('images/why-villas.png') center/cover; height: 100%;">
+                            <div class="inner-circle-overlay"
+                                style="background: linear-gradient(to top, rgba(10,159,165,0.4), transparent); height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 5. Footer (Same) -->
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5 mb-5 pb-4 border-bottom border-secondary border-opacity-50">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <a href="index.html" class="d-inline-block mb-lg-0 mb-4 text-decoration-none">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" height="45" class="site-logo">
+                    </a>
+                    <p class="text-white-50 mb-4 pe-lg-4">Experience unparalleled luxury, private chefs, and
+                        personalized itineraries at the finest vacation rentals in the Caribbean.</p>
+                    <div class="social-links justify-content-center justify-content-lg-start">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="services.html">Private Chef</a></li>
+                        <li><a href="services.html">Yacht Charters</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Concierge Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title text-center text-lg-start">Newsletter</h5>
+                    <p class="text-white-50 text-center text-lg-start small mb-3">Subscribe for exclusive offers and
+                        luxury inspiration.</p>
+                    <form class="d-flex max-w-sm mx-auto mx-lg-0">
+                        <input type="email" class="form-control border-secondary text-white"
+                            style="background-color: rgba(255,255,255,0.05);" placeholder="Enter your email address..."
+                            required>
+                        <button class="btn btn-warning ms-2 fw-bold" type="submit"><i
+                                class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-white-50 small">
+                &copy; 2026 LuxeVillas. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

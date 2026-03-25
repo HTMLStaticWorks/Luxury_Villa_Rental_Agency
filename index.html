@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeVillas - Premium Caribbean Rentals | Luxury Vacations</title>
+    <meta name="description"
+        content="Discover exclusive luxury villa rentals in the Caribbean. Experience premium concierge services, private chefs, and personalized itineraries at LuxeVillas.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxevillas.caribbean/">
+    <meta property="og:title" content="LuxeVillas - Premium Caribbean Rentals">
+    <meta property="og:description" content="Experience unparalleled luxury in the Caribbean's finest private estates.">
+    <meta property="og:image" content="images/luxe-villas-hero.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="LuxeVillas - Premium Caribbean Rentals">
+    <meta property="twitter:description"
+        content="Experience unparalleled luxury in the Caribbean's finest private estates.">
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "TravelAgency",
+          "name": "LuxeVillas Caribbean",
+          "description": "Premium Caribbean Villa Rentals & Experiences"
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-brand">LuxeVillas</div>
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="me-2 site-logo">
+                </a>
+                <div class="d-flex align-items-center d-xl-none gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-2" id="mob-rtl-toggle"
+                        style="font-size: 0.75rem;">RTL</button>
+                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 32px; height: 32px;"><i
+                            class="bi bi-moon"></i></button>
+                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="villas.html">Villas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="rtl-toggle">RTL</button>
+                        <button class="theme-toggle-btn" id="theme-toggle"><i class="bi bi-moon"></i></button>
+                        <a href="register.html" class="nav-btn btn-primary">Sign Up</a>
+                        <a href="dashboard.html" class="nav-btn btn-primary">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 fs-5">
+                <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="index-2.html">Home 2</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="villas.html">Villas</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="journal.html">Journal</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 pt-4 border-top d-flex flex-column gap-3">
+
+                <a href="register.html" class="btn btn-primary w-100 rounded-pill py-2">Sign Up</a>
+                <a href="dashboard.html" class="btn btn-primary w-100 rounded-pill py-2">Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Hero Section (Cabana Collage Style) -->
+    <section class="hero-collage position-relative overflow-hidden"
+        style="background-color: var(--sec-color); min-height: calc(100vh - 75px); display: flex; align-items: center; justify-content: center; transition: background-color 0.3s ease;">
+
+        <!-- Collage Images (Absolute) -->
+        <div class="collage-images position-absolute w-100 h-100 top-0 start-0 pointer-events-none z-1">
+            <!-- Image 1 (Left) -->
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80"
+                class="position-absolute shadow-lg animate-fade float-1 object-fit-cover"
+                style="top: 20%; left: 8%; width: 25%; height: 45%; max-width: 350px; border-radius: 12px; border: 2px solid var(--border-color);"
+                alt="View">
+
+            <!-- Image 2 (Top Right) -->
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
+                class="position-absolute shadow-sm animate-fade float-2 object-fit-cover d-none d-md-block"
+                style="top: 15%; right: 10%; width: 20%; height: 30%; max-width: 280px; border-radius: 12px; border: 2px solid var(--border-color);"
+                alt="Villa">
+
+            <!-- Image 3 (Bottom Right) -->
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80"
+                class="position-absolute shadow-lg animate-fade float-3 object-fit-cover d-none d-md-block"
+                style="bottom: 10%; right: 15%; width: 22%; height: 35%; max-width: 320px; border-radius: 12px; border: 2px solid var(--border-color);"
+                alt="Pool">
+        </div>
+
+        <!-- Center Text -->
+        <div class="container position-relative z-3 text-center animate-up delay-300 mt-5 pt-5">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="var(--accent-color)" class="mb-4">
+                <path
+                    d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.03,7.7 15.7,9.37 15.7,11.4C15.7,13.43 14.03,15.1 12,15.1C9.97,15.1 8.3,13.43 8.3,11.4C8.3,9.37 9.97,7.7 12,7.7M12,9.2A2.2,2.2 0 0,0 9.8,11.4A2.2,2.2 0 0,0 12,13.6A2.2,2.2 0 0,0 14.2,11.4A2.2,2.2 0 0,0 12,9.2Z" />
+            </svg>
+            <h1 class="mb-3"
+                style="color: var(--pr-color); font-family: var(--font-serif); font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 400; letter-spacing: -2px; line-height: 1;">
+                Luxury private<br>islands</h1>
+            <p class="fs-4 fst-italic mx-auto mt-4"
+                style="color: var(--text-muted); font-family: var(--font-serif); max-width: 500px;">For the ultimate
+                getaway.</p>
+            <div class="mt-5 pt-5">
+                <a href="#booking"
+                    class="text-decoration-none d-inline-flex flex-column align-items-center animate-fade delay-300"
+                    style="color: var(--pr-color);">
+                    <span class="small text-uppercase fw-semibold mb-2"
+                        style="letter-spacing: 2px; font-size: 0.75rem; color: var(--accent-color);">Scroll</span>
+                    <i class="bi bi-mouse fs-4 mb-1"></i>
+                    <i class="bi bi-arrow-down" style="animation: bounce 2s infinite;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Search / Booking feature -->
+    <section class="section-padding py-5 position-relative z-3" id="booking">
+        <div class="container animate-up delay-200">
+            <div class="bg-body p-4 p-md-5 rounded-4 shadow-lg border">
+                <form class="row g-4 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small mb-2">Location</label>
+                        <select class="form-select border-0 bg-light p-3 rounded-3 fw-medium">
+                            <option selected>Any Caribbean Island</option>
+                            <option value="1">St. Barts</option>
+                            <option value="2">Turks & Caicos</option>
+                            <option value="3">Barbados</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small mb-2">Check in - Check out</label>
+                        <input type="date" class="form-control border-0 bg-light p-3 rounded-3 text-muted">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small mb-2">Guests</label>
+                        <select class="form-select border-0 bg-light p-3 rounded-3 fw-medium">
+                            <option selected>2 Guests</option>
+                            <option value="1">4 Guests</option>
+                            <option value="2">6+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn-custom btn-primary w-100 p-3 h-100 fs-5"><i
+                                class="bi bi-search me-2"></i> Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Features (Why Choose Us - Staggered Unique Layout) -->
+    <section class="section-padding position-relative overflow-hidden" id="why-choose-us">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 animate-up">
+                    <span class="section-subtitle">Why Choose Us</span>
+                    <h2 class="display-5 mb-4">The Premium Experience</h2>
+                    <p class="lead mb-5">We go beyond simple rentals. We curate the top 1% of Caribbean estates and pair
+                        them with world-class service to create unforgettable memories.</p>
+
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 hover-lift">
+                            <i class="bi bi-star-fill text-primary mt-1"></i>
+                            <div>
+                                <h5 class="mb-1">Elite Portfolio</h5>
+                                <p class="text-muted small m-0">Only the most exceptional villas make the cut.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 hover-lift">
+                            <i class="bi bi-person-check-fill text-primary mt-1"></i>
+                            <div>
+                                <h5 class="mb-1">Personal Service</h5>
+                                <p class="text-muted small m-0">24/7 dedicated support for every whim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-3 align-items-stretch">
+                        <div class="col-7 animate-up delay-100">
+                            <div class="feature-img-card h-100">
+                                <div class="feature-img-wrapper h-100">
+                                    <img src="images/why-villas.png" alt="Luxury Villa"
+                                        class="h-100 w-100 object-fit-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="row g-3 h-100">
+                                <div class="col-12 animate-up delay-200" style="height: 50%;">
+                                    <div class="feature-img-card h-100">
+                                        <div class="feature-img-wrapper h-100">
+                                            <img src="images/why-concierge.png" alt="Concierge"
+                                                class="h-100 w-100 object-fit-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 animate-up delay-300" style="height: 50%;">
+                                    <div class="feature-img-card h-100">
+                                        <div class="feature-img-wrapper h-100">
+                                            <img src="images/why-privacy.png" alt="Privacy"
+                                                class="h-100 w-100 object-fit-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Categories / Popular Villas -->
+    <section class="section-padding">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5 animate-up">
+                <div>
+                    <span class="section-subtitle">Discover</span>
+                    <h2 class="mb-0">Featured Villas</h2>
+                </div>
+                <a href="villas.html" class="d-none d-md-flex btn-custom btn-outline">View All</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 animate-up delay-100">
+                    <article class="property-card h-100">
+                        <div class="property-img-wrap">
+                            <span class="property-badge">St. Barts</span>
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Villa Azure" loading="lazy">
+                        </div>
+                        <div class="property-content">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h4 class="mb-0">Villa Azure</h4>
+                                <span class="fw-bold text-primary">$4,500<span
+                                        class="small text-muted fw-normal">/nt</span></span>
+                            </div>
+                            <ul class="d-flex gap-3 text-muted small mb-3" style="padding-left: 0 !important;">
+                                <li><i class="bi bi-people me-1"></i> 8 Guests</li>
+                                <li><i class="bi bi-door-open me-1"></i> 4 Beds</li>
+                                <li><i class="bi bi-water me-1"></i> Infinity Pool</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 animate-up delay-200">
+                    <article class="property-card h-100">
+                        <div class="property-img-wrap">
+                            <span class="property-badge">Turks & Caicos</span>
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="The Sanctuary" loading="lazy">
+                        </div>
+                        <div class="property-content">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h4 class="mb-0">The Sanctuary</h4>
+                                <span class="fw-bold text-primary">$6,200<span
+                                        class="small text-muted fw-normal">/nt</span></span>
+                            </div>
+                            <ul class="d-flex gap-3 text-muted small mb-3" style="padding-left: 0 !important;">
+                                <li><i class="bi bi-people me-1"></i> 12 Guests</li>
+                                <li><i class="bi bi-door-open me-1"></i> 6 Beds</li>
+                                <li><i class="bi bi-water me-1"></i> Beachfront</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 animate-up delay-300">
+                    <article class="property-card h-100">
+                        <div class="property-img-wrap">
+                            <span class="property-badge">Barbados</span>
+                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Palm Estate" loading="lazy">
+                        </div>
+                        <div class="property-content">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h4 class="mb-0">Palm Estate</h4>
+                                <span class="fw-bold text-primary">$3,800<span
+                                        class="small text-muted fw-normal">/nt</span></span>
+                            </div>
+                            <ul class="d-flex gap-3 text-muted small mb-3" style="margin-left: 0 !important;">
+                                <li><i class="bi bi-people me-1"></i> 6 Guests</li>
+                                <li><i class="bi bi-door-open me-1"></i> 3 Beds</li>
+                                <li><i class="bi bi-water me-1"></i> Chef Inc.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5 d-md-none animate-up">
+                <a href="villas.html" class="btn-custom btn-outline w-100">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Popular Food & Dining (Exquisite Tastes - Redesigned to match Screenshot 1) -->
+    <section class="section-padding bg-beige">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animate-fade delay-100 position-relative">
+                    <img src="images/palm-leaf-bg.png" class="static-leaf leaf-top-left" alt=""
+                        style="opacity: 0.1; filter: sepia(1);">
+                    <div class="exquisite-img-collage">
+                        <div class="exquisite-img-item v-equal">
+                            <img src="images/exquisite-1.png" alt="Exquisite View">
+                        </div>
+                        <div class="exquisite-img-item v-equal">
+                            <img src="images/exquisite-2.png" alt="Island Experience">
+                            <div class="play-btn-overlay"><i class="bi bi-play-fill text-dark"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-up delay-200 ps-lg-5">
+                    <span class="section-subtitle">THE BEST OF THE BEST</span>
+                    <h2 class="display-4 fw-normal mb-4" style="font-family: var(--font-serif);">A private beach is a
+                        true slice of heaven!</h2>
+                    <p class="mb-5 lead">Elevate your vacation with our exclusive in-villa dining services. Sample the
+                        island's finest flavors crafted by Michelin-trained private chefs.</p>
+
+                    <ul class="check-list-teal mb-5">
+                        <li><i class="bi bi-check-lg"></i> Personalized Menus tailored to you</li>
+                        <li><i class="bi bi-check-lg"></i> Local Seafood & Organic Produce</li>
+                        <li><i class="bi bi-check-lg"></i> Sommelier curated wine pairings</li>
+                    </ul>
+
+                    <a href="about.html" class="btn-custom btn-primary px-5 py-3">About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. How it works (Unique Redesign) -->
+    <section class="section-padding bg-white position-relative overflow-hidden" id="how-it-works">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle animate-up">Simple Process</span>
+                <h2 class="section-title animate-up">How It Works</h2>
+            </div>
+
+            <div class="timeline-unique position-relative">
+                <div class="timeline-item left animate-up delay-100">
+                    <div class="timeline-dot">1</div>
+                    <div class="bg-body p-4 rounded-4 shadow-sm border">
+                        <h4>Vision & Concept</h4>
+                        <p class="text-muted m-0">Share your dream vacation goals with our expert island consultants to
+                            begin your curation journey.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-up delay-200">
+                    <div class="timeline-dot">2</div>
+                    <div class="bg-body p-4 rounded-4 shadow-sm border">
+                        <h4>Estate Curation</h4>
+                        <p class="text-muted m-0">Receive a hand-picked selection of the Caribbean's most exclusive
+                            estates tailored specifically to your group.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left animate-up delay-300">
+                    <div class="timeline-dot">3</div>
+                    <div class="bg-body p-4 rounded-4 shadow-sm border">
+                        <h4>The Celebration</h4>
+                        <p class="text-muted m-0">Arrive in paradise. From private jets to personal chefs, every detail
+                            of your stay is meticulously managed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA (Ultimate Escape - Redesigned to match Screenshot 2) -->
+    <section class="section-padding py-0 mb-5">
+        <div class="container-fluid px-0">
+            <div class="ultimate-cta-hero">
+                <img src="images/ultimate-escape-bg.png" class="bg-img" alt="Sunset Beach">
+                <div class="overlay"></div>
+                <div class="container animate-up">
+                    <div class="play-btn-overlay mb-4"><i class="bi bi-play-fill"></i></div>
+                    <span class="section-subtitle text-white border-bottom border-white d-inline-block mb-3 px-2 pb-1"
+                        style="font-size: 0.75rem; border-width: 2px !important;">LUXURY LIFESTYLE</span>
+                    <h2 class="display-3 text-white mb-5"
+                        style="font-family: var(--font-serif); max-width: 900px; margin: 0 auto;">The most fabulous
+                        island holidays for a proper escape</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5 mb-5 pb-4 border-bottom border-secondary border-opacity-50">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <a href="index.html" class="d-inline-block mb-lg-0 mb-4 text-decoration-none">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" height="45" class="site-logo">
+                    </a>
+                    <p class="text-white-50 mb-4 pe-lg-4">Experience unparalleled luxury, private chefs, and
+                        personalized itineraries at the finest vacation rentals in the Caribbean.</p>
+                    <div class="social-links justify-content-center justify-content-lg-start">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="services.html">Private Chef</a></li>
+                        <li><a href="services.html">Yacht Charters</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Concierge Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title text-center text-lg-start">Newsletter</h5>
+                    <p class="text-white-50 text-center text-lg-start small mb-3">Subscribe for exclusive offers and
+                        luxury inspiration.</p>
+                    <form class="d-flex max-w-sm mx-auto mx-lg-0">
+                        <input type="email" class="form-control border-secondary text-white"
+                            style="background-color: rgba(255,255,255,0.05);" placeholder="Enter your email address..."
+                            required>
+                        <button class="btn btn-warning ms-2 fw-bold" type="submit"><i
+                                class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-white-50 small">
+                &copy; 2026 LuxeVillas. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Floating Sidebar Removed -->
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

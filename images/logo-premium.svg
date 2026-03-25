@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A9FA5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#064E52;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Palm Leaf Icon - Centered vertically in 80px height -->
+  <g transform="translate(10, 10)">
+    <path d="M45,30 C30,30 20,40 15,50 C20,45 30,42 45,42 C45,42 55,42 65,50 C60,40 55,30 45,30 Z" fill="url(#leafGradient)" />
+    <path d="M45,28 C35,28 25,35 20,45 C25,40 32,38 45,38 C58,38 65,40 70,45 C65,35 55,28 45,28 Z" fill="url(#leafGradient)" opacity="0.8" />
+    <path d="M45,26 C38,26 30,30 25,40 C30,35 37,33 45,33 C53,33 60,35 65,40 C60,30 52,26 45,26 Z" fill="url(#leafGradient)" opacity="0.6" />
+  </g>
+  <!-- Text - Plenty of room now -->
+  <text x="100" y="52" font-family="'Playfair Display', serif" font-size="32" fill="#064E52" font-weight="600">Luxe<tspan fill="#0A9FA5">Villas</tspan></text>
+</svg>

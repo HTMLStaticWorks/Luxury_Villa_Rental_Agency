@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge & Luxury Services | LuxeVillas</title>
+    <meta name="description"
+        content="From private chefs to yacht charters, discover our world-class concierge services.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxevillas.caribbean/services.html">
+    <meta property="og:title" content="LuxeVillas - Concierge & Luxury Services">
+    <meta property="og:description" content="Elevate your stay with our bespoke luxury lifestyle services.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-brand">LuxeVillas</div>
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header scrolled border-bottom"> <!-- Force scrolled state for inner pages -->
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="site-logo">
+                </a>
+                <div class="d-flex align-items-center d-xl-none gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-2" id="mob-rtl-toggle"
+                        style="font-size: 0.75rem;">RTL</button>
+                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 32px; height: 32px;"><i
+                            class="bi bi-moon"></i></button>
+                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="villas.html">Villas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="rtl-toggle">RTL</button>
+                        <button class="theme-toggle-btn" id="theme-toggle"><i class="bi bi-moon"></i></button>
+                        <a href="register.html" class="nav-btn btn-primary">Sign Up</a>
+                        <a href="dashboard.html" class="nav-btn btn-primary">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 fs-5">
+                <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="index-2.html">Home 2</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="villas.html">Villas</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="journal.html">Journal</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 pt-4 border-top d-flex flex-column gap-3">
+
+                <a href="register.html" class="btn btn-primary w-100 rounded-pill py-2">Sign Up</a>
+                <a href="dashboard.html" class="btn btn-primary w-100 rounded-pill py-2">Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header py-5 position-relative overflow-hidden text-center text-white"
+        style="background: linear-gradient(rgba(10,159,165,0.2), rgba(15,23,42,0.8)), url('images/services-hero.png') center/cover; min-height: 400px; display: flex; align-items: center;">
+        <div class="container py-5 mt-5 animate-up position-relative z-3">
+            <h1 class="display-4 fw-bold text-white">Exclusive Services</h1>
+            <p class="lead text-white fw-light mb-0 animate-up delay-100">Bespoke experiences tailored to your
+                every whim.</p>
+        </div>
+    </section>
+
+    <!-- Content: Concierge -->
+    <section class="section-padding overflow-hidden position-relative">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container animate-up">
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Private Chef" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="section-subtitle">Gastronomy</span>
+                    <h2 class="mb-4">Private Chef Experiences</h2>
+                    <p class="text-muted mb-4">Transform your dining room into a private Michelin-star restaurant. Our
+                        hand-selected chefs curate bespoke menus based on your exact preferences, utilizing the freshest
+                        local ingredients.</p>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Daily breakfast, lunch, and
+                                dinner options</span></li>
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Special event catering and
+                                cocktail parties</span></li>
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Sommelier wine pairings and
+                                mixology</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5 py-5 border-top">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Yacht Charter" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-subtitle">Exploration</span>
+                    <h2 class="mb-4">Luxury Yacht Charters</h2>
+                    <p class="text-muted mb-4">Discover hidden coves and secluded beaches on your own private vessel.
+                        Choose from our fleet of luxury catamarans, motor yachts, and sailboats.</p>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Half-day, full-day, and sunset
+                                cruises</span></li>
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Fully crewed with captain and
+                                hostess</span></li>
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Onboard water sports and
+                                snorkeling equipment</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5 py-5 border-top">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Spa" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="section-subtitle">Wellness</span>
+                    <h2 class="mb-4">In-Villa Spa & Wellness</h2>
+                    <p class="text-muted mb-4">Achieve complete relaxation without leaving the comfort of your villa.
+                        Our specialized therapists offer a wide array of rejuvenating treatments.</p>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Deep tissue, Swedish, and hot
+                                stone massages</span></li>
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Private yoga and pilates
+                                instructors</span></li>
+                        <li class="d-flex align-items-center gap-3"><i
+                                class="bi bi-check-circle-fill text-warning"></i><span>Facials and organic skin
+                                treatments</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Summary -->
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5 mb-5 pb-4 border-bottom border-secondary border-opacity-50">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <a href="index.html" class="d-inline-block mb-lg-0 mb-4 text-decoration-none">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" height="45" class="site-logo">
+                    </a>
+                    <p class="text-white-50 mb-4 pe-lg-4">Experience unparalleled luxury, private chefs, and
+                        personalized itineraries at the finest vacation rentals in the Caribbean.</p>
+                    <div class="social-links justify-content-center justify-content-lg-start">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="services.html">Private Chef</a></li>
+                        <li><a href="services.html">Yacht Charters</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Concierge Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title text-center text-lg-start">Newsletter</h5>
+                    <p class="text-white-50 text-center text-lg-start small mb-3">Subscribe for exclusive offers and
+                        luxury inspiration.</p>
+                    <form class="d-flex max-w-sm mx-auto mx-lg-0">
+                        <input type="email" class="form-control border-secondary text-white"
+                            style="background-color: rgba(255,255,255,0.05);" placeholder="Enter your email address..."
+                            required>
+                        <button class="btn btn-warning ms-2 fw-bold" type="submit"><i
+                                class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-white-50 small">
+                &copy; 2026 LuxeVillas. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

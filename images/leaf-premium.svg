@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A9FA5;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#064E52;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  <!-- Detailed Palm Leaf -->
+  <path d="M50,90 Q50,50 50,10" stroke="#0A9FA5" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M50,85 L20,70 M50,85 L80,70" stroke="#0A9FA5" stroke-width="0.3" opacity="0.4"/>
+  <path d="M50,75 L15,55 M50,75 L85,55" stroke="#0A9FA5" stroke-width="0.3" opacity="0.4"/>
+  <path d="M50,65 L10,40 M50,65 L90,40" stroke="#0A9FA5" stroke-width="0.3" opacity="0.4"/>
+  <path d="M50,55 L8,30 M50,55 L92,30" stroke="#0A9FA5" stroke-width="0.3" opacity="0.4"/>
+  <path d="M50,45 L12,20 M50,45 L88,20" stroke="#0A9FA5" stroke-width="0.3" opacity="0.4"/>
+  <path d="M50,35 L25,12 M50,35 L75,12" stroke="#0A9FA5" stroke-width="0.3" opacity="0.4"/>
+  <!-- Leaflets as shapes -->
+  <path d="M50,85 C40,80 20,70 18,72 C20,74 40,82 50,85 Z" fill="url(#leafGrad)"/>
+  <path d="M50,85 C60,80 80,70 82,72 C80,74 60,82 50,85 Z" fill="url(#leafGrad)"/>
+  <path d="M50,75 C35,70 15,55 13,57 C15,59 35,72 50,75 Z" fill="url(#leafGrad)"/>
+  <path d="M50,75 C65,70 85,55 87,57 C85,59 65,72 50,75 Z" fill="url(#leafGrad)"/>
+  <path d="M50,65 C30,60 10,40 8,42 C10,44 30,62 50,65 Z" fill="url(#leafGrad)"/>
+  <path d="M50,65 C70,60 90,40 92,42 C90,44 70,62 50,65 Z" fill="url(#leafGrad)"/>
+  <path d="M50,55 C25,50 8,30 6,32 C8,34 25,52 50,55 Z" fill="url(#leafGrad)"/>
+  <path d="M50,55 C75,50 92,30 94,32 C92,34 75,52 50,55 Z" fill="url(#leafGrad)"/>
+  <path d="M50,45 C30,40 12,20 10,22 C12,24 30,42 50,45 Z" fill="url(#leafGrad)"/>
+  <path d="M50,45 C70,40 88,20 90,22 C88,24 70,42 50,45 Z" fill="url(#leafGrad)"/>
+</svg>

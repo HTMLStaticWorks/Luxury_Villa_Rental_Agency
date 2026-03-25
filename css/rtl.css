@@ -1,0 +1,30 @@
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+html[dir="rtl"] .navbar-nav {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+html[dir="rtl"] .dashboard-main {
+    margin-right: 280px;
+    margin-left: 0;
+}
+html[dir="rtl"] .dashboard-sidebar {
+    right: 0;
+    left: auto;
+    border-left: 1px solid var(--border-color);
+    border-right: none;
+}
+html[dir="rtl"] .sidebar-link {
+    border-right: 3px solid transparent;
+    border-left: none;
+}
+html[dir="rtl"] .sidebar-link.active {
+    border-right-color: var(--accent-color);
+}
+@media (max-width: 991.98px) {
+    html[dir="rtl"] .dashboard-main { margin-right: 0; }
+    html[dir="rtl"] .dashboard-sidebar { transform: translateX(100%); }
+    html[dir="rtl"] .dashboard-sidebar.show { transform: translateX(0); }
+}

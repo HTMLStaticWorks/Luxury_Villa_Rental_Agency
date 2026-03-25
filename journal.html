@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journal | Luxury Travel Inspiration</title>
+    <meta name="description" content="Insights, travel guides, and luxury lifestyle inspiration from the Caribbean.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxevillas.caribbean/journal.html">
+    <meta property="og:title" content="LuxeVillas - The Journal">
+    <meta property="og:description" content="Explore our curated world of luxury travel and Caribbean lifestyle.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="site-header scrolled border-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="site-logo">
+                </a>
+                <div class="d-flex align-items-center d-xl-none gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-2" id="mob-rtl-toggle"
+                        style="font-size: 0.75rem;">RTL</button>
+                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 32px; height: 32px;"><i
+                            class="bi bi-moon"></i></button>
+                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="villas.html">Villas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="journal.html">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="rtl-toggle">RTL</button>
+                        <button class="theme-toggle-btn" id="theme-toggle"><i class="bi bi-moon"></i></button>
+                        <a href="register.html" class="nav-btn btn-primary">Sign Up</a>
+                        <a href="dashboard.html" class="nav-btn btn-primary">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 fs-5">
+                <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="index-2.html">Home 2</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="villas.html">Villas</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="journal.html">Journal</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 pt-4 border-top d-flex flex-column gap-3">
+
+                <a href="register.html" class="btn btn-primary w-100 rounded-pill py-2">Sign Up</a>
+                <a href="dashboard.html" class="btn btn-primary w-100 rounded-pill py-2">Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="page-header py-5 position-relative overflow-hidden text-center text-white"
+        style="background: linear-gradient(rgba(10,159,165,0.2), rgba(15,23,42,0.8)), url('images/journal-hero.png') center/cover; min-height: 400px; display: flex; align-items: center;">
+        <div class="container py-4 mt-5 animate-up position-relative z-3">
+            <h1 class="display-5 mb-3 fw-bold text-white">The Journal</h1>
+            <p class="text-white">Insights, travel guides, and luxury lifestyle inspiration.</p>
+        </div>
+    </section>
+
+    <section class="py-5 position-relative overflow-hidden mt-n4">
+        <div class="decorative-leaf-container">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-left-static" alt="">
+            <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
+        </div>
+        <div class="container mt-4">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <!-- Article 1 -->
+                    <article class="card border-0 mb-5 animate-up bg-body header-bg overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            class="card-img-top object-fit-cover" alt="Article Image" style="height: 400px;">
+                        <div class="card-body p-4 p-md-5">
+                            <span class="text-warning fw-bold text-uppercase small tracking-wider mb-2 d-block">Travel
+                                Guide</span>
+                            <h2 class="card-title fw-bold">The Ultimate Guide to St. Barts in 2026</h2>
+                            <p class="card-text text-muted mb-4 mt-3">From exclusive beach clubs to secret coves,
+                                discover everything you need to know about the most glamorous island in the Caribbean.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                                <div class="small text-muted"><i class="bi bi-calendar3 me-2"></i>Oct 15, 2025</div>
+                                <a href="#" class="btn-custom btn-outline py-2 px-4 small">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="card border-0 mb-5 animate-up bg-body header-bg overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            class="card-img-top object-fit-cover" alt="Article Image" style="height: 400px;">
+                        <div class="card-body p-4 p-md-5">
+                            <span
+                                class="text-warning fw-bold text-uppercase small tracking-wider mb-2 d-block">Gastronomy</span>
+                            <h2 class="card-title fw-bold">Meet the Chef: Culinary Excellence In-Villa</h2>
+                            <p class="card-text text-muted mb-4 mt-3">An interview with Executive Chef Thomas, detailing
+                                his approach to combining fresh Caribbean ingredients with classic French techniques.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                                <div class="small text-muted"><i class="bi bi-calendar3 me-2"></i>Oct 02, 2025</div>
+                                <a href="#" class="btn-custom btn-outline py-2 px-4 small">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pagination -->
+                    <nav class="d-flex justify-content-center mt-5">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="position-sticky" style="top: 100px;">
+                        <div class="card border border-opacity-50 rounded-4 p-4 mb-4 shadow-sm bg-body">
+                            <h5 class="mb-3">Search</h5>
+                            <div class="input-group border rounded-pill overflow-hidden bg-white">
+                                <input type="text" class="form-control border-0 bg-transparent py-2 ps-3"
+                                    placeholder="Search...">
+                                <button class="btn btn-primary px-3"><i class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="card border border-opacity-50 rounded-4 p-4 shadow-sm bg-body">
+                            <h5 class="mb-4">Categories</h5>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                                <li><a href="#"
+                                        class="d-flex justify-content-between text-muted text-decoration-none hover-primary"><span>Destination
+                                            Guides</span> <span
+                                            class="badge bg-light text-dark rounded-pill">12</span></a></li>
+                                <li><a href="#"
+                                        class="d-flex justify-content-between text-muted text-decoration-none hover-primary"><span>Villa
+                                            Spotlights</span> <span
+                                            class="badge bg-light text-dark rounded-pill">8</span></a></li>
+                                <li><a href="#"
+                                        class="d-flex justify-content-between text-muted text-decoration-none hover-primary"><span>Gastronomy</span>
+                                        <span class="badge bg-light text-dark rounded-pill">5</span></a></li>
+                                <li><a href="#"
+                                        class="d-flex justify-content-between text-muted text-decoration-none hover-primary"><span>Travel
+                                            Tips</span> <span
+                                            class="badge bg-light text-dark rounded-pill">14</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5 mb-5 pb-4 border-bottom border-secondary border-opacity-50">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <a href="index.html" class="d-inline-block mb-lg-0 mb-4 text-decoration-none">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" height="45" class="site-logo">
+                    </a>
+                    <p class="text-white-50 mb-4 pe-lg-4">Experience unparalleled luxury, private chefs, and
+                        personalized itineraries at the finest vacation rentals in the Caribbean.</p>
+                    <div class="social-links justify-content-center justify-content-lg-start">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links list-unstyled m-0">
+                        <li><a href="services.html">Private Chef</a></li>
+                        <li><a href="services.html">Yacht Charters</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Concierge Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title text-center text-lg-start">Newsletter</h5>
+                    <p class="text-white-50 text-center text-lg-start small mb-3">Subscribe for exclusive offers and
+                        luxury inspiration.</p>
+                    <form class="d-flex max-w-sm mx-auto mx-lg-0">
+                        <input type="email" class="form-control border-secondary text-white"
+                            style="background-color: rgba(255,255,255,0.05);" placeholder="Enter your email address..."
+                            required>
+                        <button class="btn btn-warning ms-2 fw-bold" type="submit"><i
+                                class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-white-50 small">
+                &copy; 2026 LuxeVillas. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

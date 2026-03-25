@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Dashboard | LuxeVillas</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="images/logo-premium.svg" alt="LuxeVillas" height="40"></a>
+                <button class="btn btn-sm d-lg-none text-white border-0" id="sidebarClose"
+                    onclick="document.querySelector('.dashboard-sidebar').classList.remove('show')"><i
+                        class="bi bi-x-lg fs-4"></i></button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active text-decoration-none" data-target="pane-dashboard">
+                    <i class="bi bi-grid-1x2"></i> Dashboard
+                </a>
+                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-bookings">
+                    <i class="bi bi-suitcase-lg"></i> My Bookings
+                </a>
+                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-saved">
+                    <i class="bi bi-heart"></i> Saved Villas
+                </a>
+                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-chat">
+                    <i class="bi bi-chat-text"></i> Concierge Chat
+                    <span class="badge bg-danger rounded-pill ms-auto">2</span>
+                </a>
+                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-profile">
+                    <i class="bi bi-person"></i> Profile
+                </a>
+                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-settings">
+                    <i class="bi bi-gear"></i> Settings
+                </a>
+            </nav>
+
+            <div class="mt-auto p-4 border-top">
+                <a href="login.html" class="sidebar-link text-danger p-0 text-decoration-none bg-transparent">
+                    <i class="bi bi-box-arrow-right text-danger"></i> Log Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <div id="pane-dashboard" class="dashboard-pane active">
+                <header
+                    class="dashboard-header bg-body p-3 p-md-4 rounded-4 shadow-sm border mb-4 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="index.html" class="d-lg-none"><img src="images/logo-premium.svg" alt="LuxeVillas"
+                                height="35"></a>
+                        <div class="d-none d-md-block">
+                            <h4 class="m-0">Welcome back, John</h4>
+                            <p class="text-muted small m-0">Here is an overview of your upcoming trips.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 gap-md-3">
+                        <div class="header-actions d-flex align-items-center gap-2">
+                            <button class="btn btn-light rounded-circle shadow-sm" style="width: 40px; height: 40px;"><i
+                                    class="bi bi-bell"></i></button>
+                            <button class="theme-toggle-btn rounded-circle shadow-sm bg-light" id="theme-toggle"
+                                style="width: 40px; height: 40px;"><i class="bi bi-moon"></i></button>
+                            <a href="#" class="d-block" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api/?name=John+Doe&background=0f172a&color=fff"
+                                    class="rounded-circle shadow-sm" width="40" height="40" alt="Avatar">
+                            </a>
+
+
+                        </div>
+                        <button class="btn btn-light d-lg-none border-0 ms-1" id="sidebarOpen"
+                            onclick="document.querySelector('.dashboard-sidebar').classList.add('show')">
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Stats -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4">
+                        <div
+                            class="bg-body border rounded-4 p-4 shadow-sm h-100 d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h6 class="text-muted mb-1">Total Bookings</h6>
+                                    <h3 class="m-0 fw-bold">12</h3>
+                                </div>
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 48px; height: 48px;">
+                                    <i class="bi bi-suitcase-lg fs-5"></i>
+                                </div>
+                            </div>
+                            <p class="text-success small m-0"><i class="bi bi-arrow-up-right me-1"></i> 2 past year</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="bg-body border rounded-4 p-4 shadow-sm h-100 d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h6 class="text-muted mb-1">Loyalty Points</h6>
+                                    <h3 class="m-0 fw-bold">45,200</h3>
+                                </div>
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 48px; height: 48px;">
+                                    <i class="bi bi-star-fill fs-5"></i>
+                                </div>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-muted small mt-2 m-0">14,800 to Platinum Tier</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="bg-body border rounded-4 p-4 shadow-sm h-100 d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h6 class="text-muted mb-1">Saved Villas</h6>
+                                    <h3 class="m-0 fw-bold">8</h3>
+                                </div>
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 48px; height: 48px;">
+                                    <i class="bi bi-heart-fill fs-5"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted small m-0">Across 3 destinations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Split -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-8">
+                        <div class="bg-body border rounded-4 shadow-sm overflow-hidden">
+                            <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">Upcoming Itineraries</h5>
+                                <a href="#" class="btn btn-sm btn-outline-primary">View All</a>
+                            </div>
+                            <div class="p-4">
+                                <!-- Order Item -->
+                                <div
+                                    class="d-flex align-items-center justify-content-between p-3 border rounded-3 mb-3 bg-light hover-shadow transition">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Villa" class="rounded-3 object-fit-cover" width="80" height="80">
+                                        <div>
+                                            <h6 class="mb-1 fw-bold">Villa Azure, St. Barts</h6>
+                                            <p class="small text-muted m-0"><i class="bi bi-calendar3 me-1"></i> Dec 15
+                                                - Dec 22, 2026</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-end d-none d-sm-block">
+                                        <span
+                                            class="badge bg-success bg-opacity-10 text-success border border-success mb-2 px-3 py-2">Confirmed</span>
+                                        <a href="#" class="d-block small text-primary text-decoration-none fw-bold">View
+                                            Details</a>
+                                    </div>
+                                </div>
+
+                                <!-- Order Item 2 -->
+                                <div
+                                    class="d-flex align-items-center justify-content-between p-3 border rounded-3 bg-light hover-shadow transition">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Villa" class="rounded-3 object-fit-cover" width="80" height="80">
+                                        <div>
+                                            <h6 class="mb-1 fw-bold">The Sanctuary, Turks</h6>
+                                            <p class="small text-muted m-0"><i class="bi bi-calendar3 me-1"></i> Feb 10
+                                                - Feb 14, 2027</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-end d-none d-sm-block">
+                                        <span
+                                            class="badge bg-warning bg-opacity-10 text-warning border border-warning mb-2 px-3 py-2">Pending
+                                            Balance</span>
+                                        <a href="#" class="d-block small text-primary text-decoration-none fw-bold">Make
+                                            Payment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-body border rounded-4 p-4 shadow-sm h-100">
+                            <h5 class="mb-4">Spending History</h5>
+                            <!-- Mock Chart using DOM -->
+                            <div class="chart-mockup d-flex align-items-end justify-content-between h-50 pt-5 pb-3 border-bottom mt-3"
+                                style="min-height: 150px;">
+                                <div class="d-flex flex-column align-items-center w-100 position-relative">
+                                    <span class="small text-muted mb-1" style="font-size: 10px;">$12k</span>
+                                    <div class="bg-light w-50 rounded-top" style="height: 100%;">
+                                        <div class="bar bg-primary rounded-top mx-auto" data-height="60"
+                                            style="height: 0%; width: 100%; transition: height 1s ease;"></div>
+                                    </div>
+                                    <span class="small text-muted mt-2">2023</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center w-100 position-relative">
+                                    <span class="small text-muted mb-1" style="font-size: 10px;">$25k</span>
+                                    <div class="bg-light w-50 rounded-top" style="height: 100%;">
+                                        <div class="bar bg-primary rounded-top mx-auto" data-height="85"
+                                            style="height: 0%; width: 100%; transition: height 1s ease;"></div>
+                                    </div>
+                                    <span class="small text-muted mt-2">2024</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center w-100 position-relative">
+                                    <span class="small text-muted mb-1" style="font-size: 10px;">$18k</span>
+                                    <div class="bg-light w-50 rounded-top" style="height: 100%;">
+                                        <div class="bar bg-warning rounded-top mx-auto" data-height="45"
+                                            style="height: 0%; width: 100%; transition: height 1s ease;"></div>
+                                    </div>
+                                    <span class="small fw-bold text-dark mt-2">2025</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-secondary w-100 mt-4">Download Statements</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placeholder Panes -->
+            <div id="pane-bookings" class="dashboard-pane">
+                <div class="bg-body border rounded-4 p-5 text-center shadow-sm">
+                    <i class="bi bi-suitcase-lg text-muted display-1 mb-4"></i>
+                    <h3>My Bookings</h3>
+                    <p class="text-muted">You have no active or historical bookings yet. Start exploring our curated
+                        villas to plan your next escape.</p>
+                    <a href="villas.html" class="btn-custom btn-primary mt-3">Explore Villas</a>
+                </div>
+            </div>
+
+            <div id="pane-saved" class="dashboard-pane">
+                <div class="bg-body border rounded-4 p-5 text-center shadow-sm">
+                    <i class="bi bi-heart text-danger display-1 mb-4"></i>
+                    <h3>Saved Villas</h3>
+                    <p class="text-muted">You haven't saved any villas to your wishlist yet. Browse our collections and
+                        save your favorites here.</p>
+                    <a href="destinations.html" class="btn-custom btn-primary mt-3">Browse Destinations</a>
+                </div>
+            </div>
+
+            <div id="pane-chat" class="dashboard-pane">
+                <div class="bg-body border rounded-4 p-5 text-center shadow-sm">
+                    <i class="bi bi-chat-dots text-primary display-1 mb-4"></i>
+                    <h3>Concierge Chat</h3>
+                    <p class="text-muted">Connect with our dedicated island experts to tailor your upcoming stay or
+                        manage existing requests.</p>
+                    <button class="btn-custom btn-primary mt-3">Start a Conversation</button>
+                </div>
+            </div>
+
+            <div id="pane-profile" class="dashboard-pane">
+                <div class="bg-body border rounded-4 p-4 shadow-sm">
+                    <h5 class="mb-4">Personal Information</h5>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold">First Name</label>
+                            <input type="text" class="form-control" value="John">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold">Last Name</label>
+                            <input type="text" class="form-control" value="Doe">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label small fw-bold">Email Address</label>
+                            <input type="email" class="form-control" value="john.doe@example.com">
+                        </div>
+                        <div class="col-md-12 text-end">
+                            <button type="button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="pane-settings" class="dashboard-pane">
+                <div class="bg-body border rounded-4 p-4 shadow-sm">
+                    <h5 class="mb-4">Account Settings</h5>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div>
+                                <h6 class="mb-1">Email Notifications</h6>
+                                <p class="small text-muted m-0">Receive updates on your bookings and exclusive offers.
+                                </p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div>
+                                <h6 class="mb-1">Two-Factor Authentication</h6>
+                                <p class="small text-muted m-0">Add an extra layer of security to your account.</p>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Enable</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+
+
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
