@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebarOpen = document.getElementById('sidebarOpen');
     const sidebarClose = document.getElementById('sidebarClose');
     const sidebar = document.querySelector('.dashboard-sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
 
     if (sidebarOpen && sidebar) {
         sidebarOpen.addEventListener('click', (e) => {
             e.stopPropagation();
             sidebar.classList.add('show');
+            if (sidebarOverlay) sidebarOverlay.classList.add('show');
         });
     }
 
@@ -15,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
         sidebarClose.addEventListener('click', (e) => {
             e.stopPropagation();
             sidebar.classList.remove('show');
+            if (sidebarOverlay) sidebarOverlay.classList.remove('show');
+        });
+    }
+
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            sidebarOverlay.classList.remove('show');
         });
     }
 
@@ -50,9 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Close sidebar on mobile after selection
-            if (window.innerWidth <= 991.98 && sidebar.classList.contains('show')) {
+            // Close sidebar after selection
+            if (sidebar.classList.contains('show')) {
                 sidebar.classList.remove('show');
+                if (sidebarOverlay) sidebarOverlay.classList.remove('show');
             }
         });
     });
