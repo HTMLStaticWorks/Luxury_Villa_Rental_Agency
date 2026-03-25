@@ -114,6 +114,10 @@
   color: var(--text-muted) !important;
 }
 
+[data-theme="dark"] .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
 /* Dashboard Dark Mode Enhancements */
 [data-theme="dark"] .dashboard-pane .card,
 [data-theme="dark"] .dashboard-pane .property-card {
@@ -310,6 +314,26 @@ ul {
   border-top-color: var(--accent-color);
   border-radius: 50%;
   animation: spin 1s linear infinite;
+}
+
+/* Auth Form Polish */
+.auth-card .form-control {
+  padding-left: 1.25rem !important;
+}
+
+.auth-card .form-check {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.auth-card .form-check-input {
+  margin-left: 0 !important;
+  float: none !important;
+  flex-shrink: 0;
+}
+
+.auth-card .form-check-label {
+  padding-left: 0 !important;
 }
 
 @keyframes spin {
@@ -1216,6 +1240,11 @@ body .site-footer {
   border-top: 1px solid #1e293b !important;
 }
 
+[data-theme="dark"] .footer-links a:hover {
+  color: #0A9FA5 !important;
+  /* Primary teal color */
+}
+
 [data-theme="dark"] .site-footer p,
 [data-theme="dark"] .site-footer a,
 [data-theme="dark"] .site-footer .text-white-50 {
@@ -1301,6 +1330,35 @@ body .site-footer {
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .site-footer .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center !important;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .site-footer .footer-links {
+    text-align: center;
+  }
+
+  .site-footer .footer-links a {
+    justify-content: center;
+  }
+
+  .site-footer .row>div:last-child {
+    margin-bottom: 0;
+  }
+
+  .site-footer .max-w-sm {
+    max-width: 100% !important;
+  }
+}
+
 .back-to-top {
   width: 40px;
   height: 40px;
@@ -1364,6 +1422,11 @@ body .site-footer {
 [data-theme="dark"] .bi-list {
   color: var(--text-color) !important;
 }
+
+[data-theme="dark"] .site-logo {
+  content: url("../images/logo-premium-white.svg") !important;
+}
+
 
 [data-theme="dark"] .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
@@ -1476,6 +1539,123 @@ body .site-footer {
   }
 }
 
+/* Theme Utilities */
+.d-dark-block { display: none !important; }
+[data-theme="dark"] .d-dark-none { display: none !important; }
+[data-theme="dark"] .d-dark-block { display: block !important; }
+
+/* Dashboard Specifics */
+.stat-icon-box {
+  background-color: rgba(10, 159, 165, 0.1);
+  color: #0A9FA5;
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .stat-icon-box {
+  background-color: rgba(10, 159, 165, 0.2) !important;
+  color: #26D0D9 !important;
+}
+
+[data-theme="dark"] .dashboard-header .btn-light,
+[data-theme="dark"] .dashboard-header .bg-light {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .dashboard-header .btn-light i {
+  color: #fff !important;
+}
+
+/* Global Button Hover Effect */
+.btn, .btn-custom, .btn-artisanal, .btn-social, .theme-toggle-btn, .rtl-toggle-btn {
+  transition: var(--transition) !important;
+}
+
+.btn:hover, .btn-custom:hover, .btn-artisanal:hover, .btn-social:hover, .theme-toggle-btn:hover, .rtl-toggle-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Dropdown & Form Polish (Teal Overrides) */
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: var(--pr-color) !important;
+  color: #fff !important;
+}
+
+.form-select:focus, .form-control:focus {
+  border-color: var(--pr-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(10, 159, 165, 0.25) !important;
+}
+
+/* Filter Button Outline */
+.btn-outline-filter {
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-muted) !important;
+  transition: var(--transition) !important;
+  background: transparent !important;
+}
+
+.btn-check:checked + .btn-outline-filter,
+.btn-outline-filter:hover {
+  background-color: var(--pr-color) !important;
+  border-color: var(--pr-color) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .btn-outline-filter {
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .form-select {
+  background-color: var(--card-bg) !important;
+  color: #fff !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Pagination Hover Effect */
+.page-link {
+  transition: all 0.3s ease !important;
+}
+
+.page-link:hover {
+  background-color: var(--pr-color) !important;
+  color: #fff !important;
+  border-color: var(--pr-color) !important;
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+  z-index: 2;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+}
+
+/* Filter Dropdown Button Styling */
+.filter-dropdown-btn {
+  background-color: var(--bg-light) !important;
+  border: none !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: var(--rd-8) !important;
+  color: var(--text-color) !important;
+  font-size: 0.9rem !important;
+  transition: var(--transition) !important;
+}
+
+.filter-dropdown-btn:hover {
+  background-color: var(--border-color) !important;
+}
+
+.filter-dropdown-btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(10, 159, 165, 0.25) !important;
+}
+
+[data-theme="dark"] .filter-dropdown-btn {
+  background-color: var(--card-bg) !important;
+  color: #fff !important;
+}
+
 /* Navigation actions space fix */
 .header-actions {
   display: flex;
@@ -1550,11 +1730,37 @@ body::before {
   color: white;
 }
 
+.video-content .btn-custom {
+  min-width: 200px;
+}
+
+@media (max-width: 575.98px) {
+  .video-content .animate-up.delay-300 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .video-content .btn-custom {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+
 .modern-booking-section {
   position: relative;
   z-index: 10;
   margin-top: -60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .modern-booking-section {
+    margin-top: 0;
+    padding: 40px 0;
+  }
 }
 
 .booking-bar-wrapper {

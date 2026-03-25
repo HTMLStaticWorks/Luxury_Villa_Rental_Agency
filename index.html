@@ -54,10 +54,6 @@
                     <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="me-2 site-logo">
                 </a>
                 <div class="d-flex align-items-center d-xl-none gap-2">
-                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-2" id="mob-rtl-toggle"
-                        style="font-size: 0.75rem;">RTL</button>
-                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 32px; height: 32px;"><i
-                            class="bi bi-moon"></i></button>
                     <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#mobileMenu">
                         <i class="bi bi-list fs-1"></i>
@@ -73,11 +69,11 @@
                                 <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="villas.html">Villas</a></li>
                         <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="header-actions">
@@ -99,14 +95,22 @@
 
         </div>
         <div class="offcanvas-body">
+            <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom">
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="mob-rtl-toggle">RTL</button>
+                    <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 35px; height: 35px;"><i
+                            class="bi bi-moon"></i></button>
+                </div>
+                <span class="text-muted small">Switch Theme / RTL</span>
+            </div>
             <ul class="navbar-nav flex-grow-1 fs-5">
                 <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
                 <li class="nav-item mb-2"><a class="nav-link" href="index-2.html">Home 2</a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item mb-2"><a class="nav-link" href="villas.html">Villas</a></li>
                 <li class="nav-item mb-2"><a class="nav-link" href="destinations.html">Destinations</a></li>
                 <li class="nav-item mb-2"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item mb-2"><a class="nav-link" href="journal.html">Journal</a></li>
-                <li class="nav-item mb-2"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             <div class="mt-4 pt-4 border-top d-flex flex-column gap-3">
@@ -181,11 +185,15 @@
                             <option value="3">Barbados</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
-                        <label class="form-label text-muted small mb-2">Check in - Check out</label>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small mb-2">Check In</label>
                         <input type="date" class="form-control border-0 bg-light p-3 rounded-3 text-muted">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
+                        <label class="form-label text-muted small mb-2">Check Out</label>
+                        <input type="date" class="form-control border-0 bg-light p-3 rounded-3 text-muted">
+                    </div>
+                    <div class="col-md-2">
                         <label class="form-label text-muted small mb-2">Guests</label>
                         <select class="form-select border-0 bg-light p-3 rounded-3 fw-medium">
                             <option selected>2 Guests</option>
@@ -466,7 +474,7 @@
                         <a href="#"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center text-lg-start">
                     <h5 class="footer-title">Quick Links</h5>
                     <ul class="footer-links list-unstyled m-0">
                         <li><a href="about.html">About Us</a></li>
@@ -476,7 +484,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
+                <div class="col-lg-3 col-md-5 col-sm-6 text-center text-lg-start">
                     <h5 class="footer-title">Services</h5>
                     <ul class="footer-links list-unstyled m-0">
                         <li><a href="services.html">Private Chef</a></li>

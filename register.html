@@ -17,7 +17,7 @@
     <div class="auth-wrap">
         <div class="auth-card shadow-sm text-center reveal active">
             <!-- THEME/RTL TOGGLES (Inside Box) -->
-            <div class="auth-nav d-flex justify-content-end gap-2 mb-2" style="margin-top: -20px; margin-right: -10px;">
+            <div class="auth-nav d-flex justify-content-end gap-2 mb-3">
                 <button id="rtl-toggle" class="rtl-toggle-btn">
                     <span>RTL</span>
                 </button>
@@ -32,15 +32,12 @@
 
 
             <form>
-                <div class="row text-start g-3">
-                    <div class="col-6 mb-1">
-                        <label class="form-label">First Name</label>
-                        <input type="text" class="form-control" placeholder="Julianne">
-                    </div>
-                    <div class="col-6 mb-1">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Smith">
-                    </div>
+                <div class="text-start mb-1">
+
+
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Smith">
+
                 </div>
                 <div class="text-start mb-1">
                     <label class="form-label">Email</label>
@@ -49,7 +46,7 @@
                 <div class="text-start mb-2">
                     <label class="form-label">Password</label>
                     <input type="password" class="form-control" placeholder="Create password">
-                    <div class="form-check text-start mb-3">
+                    <div class="form-check d-flex align-items-center gap-2 text-start mb-3">
                         <input class="form-check-input" type="checkbox" id="termsCheck" required>
                         <label class="form-check-label opacity-100" for="termsCheck" style="font-size:0.95rem;">I Agree
                             to <a href="#" class="text-gold fw-bold">Terms & Conditions</a></label>
