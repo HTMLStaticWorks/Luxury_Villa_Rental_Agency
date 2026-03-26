@@ -366,9 +366,10 @@ body.loaded #loader {
 .btn-primary,
 .btn-custom.btn-primary {
   background-color: var(--pr-color) !important;
-  border-color: var(--pr-color) !important;
+  border: 2px solid transparent !important;
   color: #fff !important;
 }
+
 
 .btn-primary:hover,
 .btn-custom.btn-primary:hover {
