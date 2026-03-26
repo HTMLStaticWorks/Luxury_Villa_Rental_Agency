@@ -114,8 +114,15 @@
             <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
         </div>
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-5 animate-fade">
-                <p class="m-0 text-muted">Showing <strong>1-6</strong> of <strong>150+</strong> properties</p>
+            <article class="filter-actions d-flex flex-wrap justify-content-between align-items-center mb-5 animate-fade gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="m-0 text-muted">Showing <strong>1-6</strong> of <strong>150+</strong> properties</p>
+                    <button class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
+                        <i class="bi bi-sliders"></i>
+                        <span>Filter</span>
+                    </button>
+                </div>
+                
                 <div class="dropdown">
                     <button class="btn filter-dropdown-btn text-start d-flex justify-content-between align-items-center gap-3"
                         type="button" data-bs-toggle="dropdown">
@@ -128,10 +135,11 @@
                         <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
                     </ul>
                 </div>
-            </div>
+            </article>
+
             <div class="row g-5">
-                <!-- Filters Sidebar -->
-                <div class="col-lg-3">
+                <!-- Desktop Sidebar Filters -->
+                <aside class="col-lg-3 d-none d-lg-block">
                     <div class="bg-body border rounded-4 p-4 sticky-top animate-fade" style="top: 120px; z-index: 10;">
                         <h5 class="mb-4 d-flex align-items-center justify-content-between">
                             Filters
@@ -157,47 +165,106 @@
                         <div class="mb-4">
                             <label class="form-label fw-bold small text-uppercase">Bedrooms</label>
                             <div class="btn-group w-100" role="group">
-                                <input type="radio" class="btn-check" name="beds" id="btnradio1" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-outline-filter border-end-0" for="btnradio1">Any</label>
-                                <input type="radio" class="btn-check" name="beds" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-filter border-end-0" for="btnradio2">3+</label>
-                                <input type="radio" class="btn-check" name="beds" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-filter" for="btnradio3">5+</label>
+                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio1_ds" autocomplete="off" checked>
+                                <label class="btn btn-outline-filter border-end-0" for="btnradio1_ds">Any</label>
+                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio2_ds" autocomplete="off">
+                                <label class="btn btn-outline-filter border-end-0" for="btnradio2_ds">3+</label>
+                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio3_ds" autocomplete="off">
+                                <label class="btn btn-outline-filter" for="btnradio3_ds">5+</label>
                             </div>
                         </div>
 
                         <div class="mb-4">
                             <label class="form-label fw-bold small text-uppercase mb-3">Amenities</label>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="am1" checked>
-                                <label class="form-check-label text-muted" for="am1">Infinity Pool</label>
+                                <input class="form-check-input" type="checkbox" id="am1_ds" checked>
+                                <label class="form-check-label text-muted" for="am1_ds">Infinity Pool</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="am2" checked>
-                                <label class="form-check-label text-muted" for="am2">Beachfront</label>
+                                <input class="form-check-input" type="checkbox" id="am2_ds" checked>
+                                <label class="form-check-label text-muted" for="am2_ds">Beachfront</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="am3">
-                                <label class="form-check-label text-muted" for="am3">Private Chef Included</label>
+                                <input class="form-check-input" type="checkbox" id="am3_ds">
+                                <label class="form-check-label text-muted" for="am3_ds">Private Chef Included</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="am4">
-                                <label class="form-check-label text-muted" for="am4">Fitness Center</label>
+                                <input class="form-check-input" type="checkbox" id="am4_ds">
+                                <label class="form-check-label text-muted" for="am4_ds">Fitness Center</label>
                             </div>
                         </div>
 
                         <button class="btn-custom btn-primary w-100 mt-2">Apply Filters</button>
                     </div>
-                </div>
+                </aside>
 
-                <!-- Grid -->
-                <div class="col-lg-9">
+                <!-- Grid & Main Content -->
+                <div class="col-lg-9 col-12">
                     
+                    <!-- Offcanvas Filter Sidebar (Mobile Only) -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="filterSidebar" aria-labelledby="filterSidebarLabel">
+                        <div class="offcanvas-header border-bottom">
+                            <h5 class="offcanvas-title" id="filterSidebarLabel">Filter Villas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-4">
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small text-uppercase">Destination</label>
+                                <div class="dropdown w-100">
+                                    <button class="btn filter-dropdown-btn w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+                                        <span>All Destinations</span>
+                                        <i class="bi bi-chevron-down small opacity-50"></i>
+                                    </button>
+                                    <ul class="dropdown-menu w-100 shadow-sm border-0">
+                                        <li><a class="dropdown-item" href="#">All Destinations</a></li>
+                                        <li><a class="dropdown-item" href="#">St. Barts</a></li>
+                                        <li><a class="dropdown-item" href="#">Turks & Caicos</a></li>
+                                        <li><a class="dropdown-item" href="#">Barbados</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small text-uppercase">Bedrooms</label>
+                                <div class="btn-group w-100" role="group">
+                                    <input type="radio" class="btn-check" name="beds" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-filter border-end-0" for="btnradio1">Any</label>
+                                    <input type="radio" class="btn-check" name="beds" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-filter border-end-0" for="btnradio2">3+</label>
+                                    <input type="radio" class="btn-check" name="beds" id="btnradio3" autocomplete="off">
+                                    <label class="btn btn-outline-filter" for="btnradio3">5+</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small text-uppercase mb-3">Amenities</label>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="am1" checked>
+                                    <label class="form-check-label text-muted" for="am1">Infinity Pool</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="am2" checked>
+                                    <label class="form-check-label text-muted" for="am2">Beachfront</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="am3">
+                                    <label class="form-check-label text-muted" for="am3">Private Chef Included</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="am4">
+                                    <label class="form-check-label text-muted" for="am4">Fitness Center</label>
+                                </div>
+                            </div>
+
+                            <button class="btn-custom btn-primary w-100 mt-2">Apply Filters</button>
+                            <button class="btn btn-link text-muted w-100 mt-3 small text-decoration-none" data-bs-dismiss="offcanvas">Reset Filters</button>
+                        </div>
+                    </div>
+
+                    <!-- Property Cards Grid -->
                     <div class="row g-4">
-                        <!-- Repeated Property Card template -->
-                        <div class="col-md-6 animate-up">
+                        <!-- Villa Azure -->
+                        <div class="col-md-6 col-xl-4 animate-up">
                             <article class="property-card h-100">
                                 <div class="property-img-wrap">
                                     <span class="property-badge shadow-sm">St. Barts</span>
@@ -206,11 +273,8 @@
                                 </div>
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <h4 class="mb-0">
-                                            Villa Azure
-                                        </h4>
-                                        <span class="fw-bold text-primary">$4,500<span
-                                                class="small text-muted fw-normal">/nt</span></span>
+                                        <h4 class="mb-0">Villa Azure</h4>
+                                        <span class="fw-bold text-primary">$4,500<span class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 8 Guests</li>
@@ -221,7 +285,8 @@
                             </article>
                         </div>
 
-                        <div class="col-md-6 animate-up delay-100">
+                        <!-- The Sanctuary -->
+                        <div class="col-md-6 col-xl-4 animate-up delay-100">
                             <article class="property-card h-100">
                                 <div class="property-img-wrap">
                                     <span class="property-badge shadow-sm">Turks & Caicos</span>
@@ -230,11 +295,8 @@
                                 </div>
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <h4 class="mb-0">
-                                            The Sanctuary
-                                        </h4>
-                                        <span class="fw-bold text-primary">$6,200<span
-                                                class="small text-muted fw-normal">/nt</span></span>
+                                        <h4 class="mb-0">The Sanctuary</h4>
+                                        <span class="fw-bold text-primary">$6,200<span class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 12 Guests</li>
@@ -245,7 +307,8 @@
                             </article>
                         </div>
 
-                        <div class="col-md-6 animate-up">
+                        <!-- Palm Estate -->
+                        <div class="col-md-6 col-xl-4 animate-up">
                             <article class="property-card h-100">
                                 <div class="property-img-wrap">
                                     <span class="property-badge shadow-sm">Barbados</span>
@@ -254,11 +317,8 @@
                                 </div>
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <h4 class="mb-0">
-                                            Palm Estate
-                                        </h4>
-                                        <span class="fw-bold text-primary">$3,800<span
-                                                class="small text-muted fw-normal">/nt</span></span>
+                                        <h4 class="mb-0">Palm Estate</h4>
+                                        <span class="fw-bold text-primary">$3,800<span class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 6 Guests</li>
@@ -269,7 +329,8 @@
                             </article>
                         </div>
 
-                        <div class="col-md-6 animate-up delay-100">
+                        <!-- Ocean Pearl -->
+                        <div class="col-md-6 col-xl-4 animate-up delay-100">
                             <article class="property-card h-100">
                                 <div class="property-img-wrap">
                                     <span class="property-badge shadow-sm">St. Martin</span>
@@ -278,11 +339,8 @@
                                 </div>
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <h4 class="mb-0">
-                                            Ocean Pearl
-                                        </h4>
-                                        <span class="fw-bold text-primary">$5,100<span
-                                                class="small text-muted fw-normal">/nt</span></span>
+                                        <h4 class="mb-0">Ocean Pearl</h4>
+                                        <span class="fw-bold text-primary">$5,100<span class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 10 Guests</li>
@@ -292,32 +350,73 @@
                                 </div>
                             </article>
                         </div>
+
+                        <!-- Veridian Cliff -->
+                        <div class="col-md-6 col-xl-4 animate-up">
+                            <article class="property-card h-100">
+                                <div class="property-img-wrap">
+                                    <span class="property-badge shadow-sm">Anguilla</span>
+                                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Veridian Cliffside">
+                                </div>
+                                <div class="property-content">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="mb-0">Veridian Cliff</h4>
+                                        <span class="fw-bold text-primary">$4,900<span class="small text-muted fw-normal">/nt</span></span>
+                                    </div>
+                                    <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
+                                        <li><i class="bi bi-people me-1"></i> 8 Guests</li>
+                                        <li><i class="bi bi-door-open me-1"></i> 4 Beds</li>
+                                        <li><i class="bi bi-water me-1"></i> Beachfront</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Luxe Island -->
+                        <div class="col-md-6 col-xl-4 animate-up delay-100">
+                            <article class="property-card h-100">
+                                <div class="property-img-wrap">
+                                    <span class="property-badge shadow-sm">Grenadines</span>
+                                    <img src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Luxe Island Retreat">
+                                </div>
+                                <div class="property-content">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="mb-0">Luxe Island</h4>
+                                        <span class="fw-bold text-primary">$7,500<span class="small text-muted fw-normal">/nt</span></span>
+                                    </div>
+                                    <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
+                                        <li><i class="bi bi-people me-1"></i> 14 Guests</li>
+                                        <li><i class="bi bi-door-open me-1"></i> 7 Beds</li>
+                                        <li><i class="bi bi-star me-1"></i> Private Island</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
                     </div>
 
-                    <!-- Pagination -->
-                    <nav class="mt-5 d-flex justify-content-center">
-                        <ul class="pagination pagination-lg">
-                            <li class="page-item disabled"><a
-                                    class="page-link border-0 shadow-sm rounded-circle me-2 text-muted" href="#"><i
-                                        class="bi bi-chevron-left"></i></a></li>
-                            <li class="page-item active"><a
-                                    class="page-link border-0 shadow-sm rounded-circle mx-1 bg-primary text-white"
-                                    href="#">1</a></li>
-                            <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
-                                    href="#">2</a></li>
-                            <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
-                                    href="#">3</a></li>
-                            <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle ms-2 text-dark"
-                                    href="#"><i class="bi bi-chevron-right"></i></a></li>
-                        </ul>
-                    </nav>
+            <!-- Pagination -->
+            <nav class="mt-5 d-flex justify-content-center">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item disabled"><a
+                            class="page-link border-0 shadow-sm rounded-circle me-2 text-muted" href="#"><i
+                                class="bi bi-chevron-left"></i></a></li>
+                    <li class="page-item active"><a
+                            class="page-link border-0 shadow-sm rounded-circle mx-1 bg-primary text-white"
+                            href="#">1</a></li>
+                    <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
+                            href="#">2</a></li>
+                    <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
+                            href="#">3</a></li>
+                    <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle ms-2 text-dark"
+                            href="#"><i class="bi bi-chevron-right"></i></a></li>
+                </ul>
+            </nav>
 
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
@@ -375,14 +474,7 @@
 
     <button id="backToTop" class="back-to-top"><i class="bi bi-arrow-up"></i></button>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
     <script src="js/main.js"></script>
 </body>
-
 </html>
