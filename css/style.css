@@ -856,6 +856,54 @@ body .navbar .navbar-nav .dropdown-menu li a.dropdown-item:hover {
   animation: floatAnim 7s ease-in-out infinite 1s;
 }
 
+.hero-collage-image {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+@media (max-width: 767.98px) {
+  .hero-collage {
+    min-height: calc(100vh - 75px);
+    padding: 110px 0 60px;
+  }
+
+  .hero-collage .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-collage .collage-images {
+    opacity: 0.95;
+  }
+
+  .hero-collage .hero-collage-image {
+    display: block !important;
+  }
+
+  .hero-collage .hero-collage-image-left {
+    top: 18% !important;
+    left: -4% !important;
+    width: 38% !important;
+    height: 34% !important;
+    max-width: none !important;
+  }
+
+  .hero-collage .hero-collage-image-top-right {
+    top: 12% !important;
+    right: -2% !important;
+    width: 34% !important;
+    height: 22% !important;
+    max-width: none !important;
+  }
+
+  .hero-collage .hero-collage-image-bottom-right {
+    right: 2% !important;
+    bottom: 16% !important;
+    width: 36% !important;
+    height: 26% !important;
+    max-width: none !important;
+  }
+}
+
 /* Custom Layout Utilities */
 .bg-beige {
   background-color: var(--sec-color) !important;
