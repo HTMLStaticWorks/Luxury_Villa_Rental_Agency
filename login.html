@@ -38,11 +38,16 @@
                 <form>
                     <div class="text-start mb-1">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="julianne@email.com">
+                        <input type="email" class="form-control" placeholder="Enter Email">
                     </div>
                     <div class="text-start mb-2">
                         <label class="form-label">Password</label>
-                        <input type="password" class="form-control" placeholder="..........">
+                        <div class="input-group">
+                            <input type="password" class="form-control border-end-0" placeholder="Enter Password" id="loginPassword">
+                            <span class="input-group-text bg-transparent border-start-0" style="cursor: pointer;" onclick="const input = document.getElementById('loginPassword'); const icon = this.querySelector('i'); if(input.type === 'password'){input.type = 'text'; icon.classList.replace('bi-eye-slash', 'bi-eye');}else{input.type = 'password'; icon.classList.replace('bi-eye', 'bi-eye-slash');}">
+                                <i class="bi bi-eye-slash text-muted"></i>
+                            </span>
+                        </div>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">

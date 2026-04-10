@@ -98,7 +98,7 @@
                     <button class="theme-toggle-btn p-0" id="theme-toggle-mobile" style="width: 35px; height: 35px;"><i
                             class="bi bi-moon"></i></button>
                 </div>
-                <span class="text-muted small">Switch Theme / RTL</span>
+
             </div>
             <ul class="navbar-nav flex-grow-1 fs-5">
                 <li class="nav-item mb-2"><a class="nav-link" href="index.html">Home 1</a></li>
@@ -120,51 +120,32 @@
 
     <!-- 1. Hero Section (Cabana Collage Style) -->
     <section class="hero-collage position-relative overflow-hidden"
-        style="background-color: var(--sec-color); min-height: calc(100vh - 75px); display: flex; align-items: center; justify-content: center; transition: background-color 0.3s ease;">
+        style="min-height: calc(100vh - 75px); display: flex; align-items: center; justify-content: center;">
 
-        <!-- Collage Images (Symmetrical 4-Image Layout) -->
-        <div class="collage-images position-absolute w-100 h-100 top-0 start-0 pointer-events-none z-1">
-            <!-- Image 1 (Top Left) -->
-            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80"
-                class="hero-collage-image hero-collage-image-tl position-absolute shadow-lg animate-fade float-1 object-fit-cover"
-                style="top: 15%; left: 8%; width: 18%; height: 28%; max-width: 300px; border-radius: 12px; border: 2px solid var(--border-color);"
-                alt="View">
-
-            <!-- Image 2 (Top Right) -->
-            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
-                class="hero-collage-image hero-collage-image-tr position-absolute shadow-sm animate-fade float-2 object-fit-cover"
-                style="top: 15%; right: 8%; width: 18%; height: 28%; max-width: 300px; border-radius: 12px; border: 2px solid var(--border-color);"
-                alt="Villa">
-
-            <!-- Image 3 (Bottom Left) -->
-            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
-                class="hero-collage-image hero-collage-image-bl position-absolute shadow-lg animate-fade float-3 object-fit-cover"
-                style="bottom: 12%; left: 10%; width: 18%; height: 28%; max-width: 300px; border-radius: 12px; border: 2px solid var(--border-color);"
-                alt="Estate">
-
-            <!-- Image 4 (Bottom Right) -->
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80"
-                class="hero-collage-image hero-collage-image-br position-absolute shadow-lg animate-fade float-1 object-fit-cover"
-                style="bottom: 12%; right: 10%; width: 18%; height: 28%; max-width: 300px; border-radius: 12px; border: 2px solid var(--border-color);"
-                alt="Pool">
+        <!-- Full Width Background Image -->
+        <div class="position-absolute w-100 h-100 top-0 start-0 z-0">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                class="w-100 h-100" style="object-fit: cover; object-position: center;" alt="Luxury Villa Background">
+            <!-- Dark Overlay for better text readability -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));"></div>
         </div>
 
         <!-- Center Text -->
         <div class="container position-relative z-3 text-center animate-up delay-300 mt-5 pt-5">
 
-            <h1 class="mb-3"
-                style="color: var(--pr-color); font-family: var(--font-serif); font-size: clamp(2rem, 6vw, 7rem); font-weight: 400; letter-spacing: 0; line-height: 1.2; word-spacing: 0.1em;">
+            <h1 class="mb-3 text-white"
+                style="font-family: var(--font-serif); font-size: clamp(2rem, 6vw, 7rem); font-weight: 400; letter-spacing: 0; line-height: 1.2; word-spacing: 0.1em; text-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                 Luxury private<br>islands</h1>
-            <p class="hero-collage-subtext fs-4 fst-italic mx-auto mt-4"
-                style="font-family: var(--font-serif); max-width: 500px;">For the ultimate
+            <p class="fs-4 fst-italic mx-auto mt-4 text-white"
+                style="font-family: var(--font-serif); max-width: 500px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">For the ultimate
                 getaway.</p>
             <div class="mt-5 pt-5">
                 <a href="#booking"
-                    class="hero-collage-scroll text-decoration-none d-inline-flex flex-column align-items-center animate-fade delay-300">
-                    <span class="hero-collage-scroll-label small text-uppercase fw-semibold mb-2"
-                        style="letter-spacing: 2px; font-size: 0.75rem;">Scroll</span>
-                    <i class="bi bi-mouse fs-4 mb-1"></i>
-                    <i class="bi bi-arrow-down" style="animation: bounce 2s infinite;"></i>
+                    class="text-decoration-none d-inline-flex flex-column align-items-center animate-fade delay-300 text-white">
+                    <span class="small text-uppercase fw-semibold mb-2 text-white"
+                        style="letter-spacing: 2px; font-size: 0.75rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Scroll</span>
+                    <i class="bi bi-mouse fs-4 mb-1" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);"></i>
+                    <i class="bi bi-arrow-down" style="animation: bounce 2s infinite; text-shadow: 0 2px 4px rgba(0,0,0,0.5);"></i>
                 </a>
             </div>
         </div>
@@ -173,36 +154,35 @@
     <!-- 2. Search / Booking feature -->
     <section class="section-padding py-5 position-relative z-3" id="booking">
         <div class="container animate-up delay-200">
-            <div class="bg-body p-4 p-md-5 rounded-4 shadow-lg border">
-                <form class="row g-4 align-items-end">
-                    <div class="col-md-3">
-                        <label class="form-label text-muted small mb-2">Location</label>
-                        <select class="form-select border-0 bg-light p-3 rounded-3 fw-medium">
+            <div class="bg-body rounded-4 shadow-lg border overflow-hidden">
+                <form class="row g-0 align-items-center">
+                    <div class="col-lg-3 col-md-6 p-4 border-end">
+                        <label class="small text-muted text-uppercase fw-bold mb-2 d-block">Location</label>
+                        <select class="form-select border-0 p-0 fw-semibold bg-transparent">
                             <option selected>Any Caribbean Island</option>
                             <option value="1">St. Barts</option>
                             <option value="2">Turks & Caicos</option>
                             <option value="3">Barbados</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
-                        <label class="form-label text-muted small mb-2">Check In</label>
-                        <input type="date" class="form-control border-0 bg-light p-3 rounded-3 text-muted">
+                    <div class="col-lg-2 col-md-6 p-4 border-end">
+                        <label class="small text-muted text-uppercase fw-bold mb-2 d-block">Check In</label>
+                        <input type="date" class="form-control border-0 p-0 fw-semibold bg-transparent text-muted">
                     </div>
-                    <div class="col-md-2">
-                        <label class="form-label text-muted small mb-2">Check Out</label>
-                        <input type="date" class="form-control border-0 bg-light p-3 rounded-3 text-muted">
+                    <div class="col-lg-2 col-md-6 p-4 border-end">
+                        <label class="small text-muted text-uppercase fw-bold mb-2 d-block">Check Out</label>
+                        <input type="date" class="form-control border-0 p-0 fw-semibold bg-transparent text-muted">
                     </div>
-                    <div class="col-md-2">
-                        <label class="form-label text-muted small mb-2">Guests</label>
-                        <select class="form-select border-0 bg-light p-3 rounded-3 fw-medium">
+                    <div class="col-lg-2 col-md-6 p-4 border-end">
+                        <label class="small text-muted text-uppercase fw-bold mb-2 d-block">Guests</label>
+                        <select class="form-select border-0 p-0 fw-semibold bg-transparent">
                             <option selected>2 Guests</option>
                             <option value="1">4 Guests</option>
                             <option value="2">6+ Guests</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
-                        <button type="button" class="btn-custom btn-primary w-100 p-3 h-100 fs-5"><i
-                                class="bi bi-search me-2"></i> Search</button>
+                    <div class="col-lg-3 col-md-12 p-4">
+                        <button type="button" class="btn btn-primary w-100 h-100 py-3 fs-5 fw-bold shadow-sm rounded-pill"><i class="bi bi-search me-2"></i> Search</button>
                     </div>
                 </form>
             </div>
@@ -286,7 +266,7 @@
                 </div>
                 <a href="villas.html" class="d-none d-md-flex btn-custom btn-outline">View All</a>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 animate-up delay-100">
                     <article class="property-card h-100">
                         <div class="property-img-wrap">

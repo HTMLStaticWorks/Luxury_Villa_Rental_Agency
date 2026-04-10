@@ -18,11 +18,14 @@
     <div class="dashboard-wrapper">
         <!-- Sidebar -->
         <aside class="dashboard-sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header d-flex justify-content-between align-items-center w-100">
                 <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
-                    <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="45" height="45">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="45" height="45"
+                        class="d-none d-lg-block">
                     <span class="brand-name">LuxeVillas</span>
                 </a>
+                <button type="button" class="btn-close d-lg-none" aria-label="Close"
+                    onclick="document.querySelector('.dashboard-sidebar').classList.remove('show'); document.getElementById('sidebarOverlay').classList.remove('show');"></button>
             </div>
 
             <nav class="sidebar-nav">
@@ -79,6 +82,10 @@
             <header
                 class="dashboard-header bg-body p-3 p-md-4 rounded-4 shadow-sm border mb-4 d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center gap-3">
+                    <div class="d-none d-lg-block">
+                        <h5 class="mb-0 fw-bold">Welcome Back, <span class="text-primary">John!</span> 👋</h5>
+                        <p class="text-muted small mb-0">Here's your dashboard overview.</p>
+                    </div>
                     <a href="index.html" class="navbar-brand d-lg-none d-flex align-items-center gap-2">
                         <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="35" height="35">
                         <span class="brand-name">LuxeVillas</span>
@@ -92,7 +99,7 @@
                                 class="bi bi-bell"></i></button>
                         <button class="theme-toggle-btn rounded-circle shadow-sm bg-light d-none d-lg-block"
                             id="theme-toggle" style="width: 40px; height: 40px;"><i class="bi bi-moon"></i></button>
-                        <a href="#" class="d-block" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="d-none d-lg-block" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="https://ui-avatars.com/api/?name=John+Doe&background=0f172a&color=fff"
                                 class="rounded-circle shadow-sm" width="40" height="40" alt="Avatar">
                         </a>
@@ -339,7 +346,7 @@
 
             <div id="pane-saved" class="dashboard-pane">
                 <h3 class="mb-4 text-center text-md-start">Saved Villas</h3>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center justify-content-xl-start">
                     <div class="col-md-6 col-xl-4">
                         <div class="property-card border rounded-4 overflow-hidden shadow-sm h-100">
                             <div class="property-img-container">
@@ -481,15 +488,15 @@
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label class="form-label small fw-bold">First Name</label>
-                            <input type="text" class="form-control" value="John">
+                            <input type="text" class="form-control" value="First Name">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label small fw-bold">Last Name</label>
-                            <input type="text" class="form-control" value="Doe">
+                            <input type="text" class="form-control" value="Last Name">
                         </div>
                         <div class="col-md-12">
                             <label class="form-label small fw-bold">Email Address</label>
-                            <input type="email" class="form-control" value="john.doe@example.com">
+                            <input type="email" class="form-control" value="Email Address">
                         </div>
                         <div class="col-md-12 text-end">
                             <button type="button" class="btn btn-primary">Save Changes</button>

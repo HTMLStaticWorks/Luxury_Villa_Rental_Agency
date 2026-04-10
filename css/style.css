@@ -2320,6 +2320,7 @@ body::before {
     min-height: auto;
     padding: var(--sp-32);
   }
+
   .experience-img-container img {
     height: 400px;
   }
@@ -2898,6 +2899,7 @@ body::before {
     max-width: 540px;
     padding: 40px 40px;
   }
+
   .auth-inner-wrap {
     max-width: 540px;
   }
@@ -2908,6 +2910,7 @@ body::before {
     max-width: 640px;
     padding: 50px 70px;
   }
+
   .auth-inner-wrap {
     max-width: 640px;
   }
