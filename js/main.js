@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
     const rtlToggleBtn = document.getElementById('rtl-toggle');
     const mobRtlToggleBtn = document.getElementById('mob-rtl-toggle');
-    
+
     // Theme logic
     const currentTheme = localStorage.getItem('theme') || 'light';
     if (currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
         themeToggleBtns.forEach(btn => btn.innerHTML = '<i class="bi bi-sun"></i>');
     }
-    
+
     // RTL Logic
     const currentRtl = localStorage.getItem('rtl') === 'true';
     if (currentRtl) {
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
     const path = window.location.pathname;
     const page = path.split('/').pop() || 'index.html';
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         const href = link.getAttribute('href');
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let count = 0;
                     const duration = 2000;
                     const increment = target / (duration / 16); // 60fps
-                    
+
                     const updateCounter = () => {
                         count += increment;
                         if (count < target) {

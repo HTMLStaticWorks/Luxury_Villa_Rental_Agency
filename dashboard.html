@@ -13,64 +13,63 @@
 </head>
 
 <body class="bg-light">
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
-
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <div class="dashboard-wrapper">
         <!-- Sidebar -->
         <aside class="dashboard-sidebar">
-            <div class="sidebar-header d-flex flex-column gap-3">
-                <div class="mb-2 d-none d-lg-block">
-                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
-                        <img src="images/logo-premium.svg" alt="LuxeVillas" height="40" class="d-dark-none">
-                        <img src="images/logo-premium-white.svg" alt="LuxeVillas" height="40" class="d-dark-block">
-                    </a>
-                </div>
-                <div class="d-flex justify-content-between align-items-center w-100">
-                    <span class="fw-bold text-uppercase small ls-wide opacity-50">Navigation</span>
-                    <button class="btn btn-sm text-white border-0 d-lg-none" id="sidebarClose"
-                        onclick="document.querySelector('.dashboard-sidebar').classList.remove('show')"><i
-                            class="bi bi-x-lg fs-4"></i></button>
-                </div>
-                <div
-                    class="d-flex d-lg-none align-items-center justify-content-between pb-3 border-bottom border-white border-opacity-10">
-                    <div class="d-flex gap-2">
-                        <button class="btn btn-sm btn-outline-light rounded-pill px-3" id="mob-rtl-toggle">RTL</button>
-                        <button class="theme-toggle-btn p-0 text-white" id="theme-toggle-mobile"
-                            style="width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; background: transparent;"><i
-                                class="bi bi-moon"></i></button>
-                    </div>
-                </div>
+            <div class="sidebar-header">
+                <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="45" height="45">
+                    <span class="brand-name">LuxeVillas</span>
+                </a>
             </div>
 
             <nav class="sidebar-nav">
-                <a href="#" class="sidebar-link active text-decoration-none" data-target="pane-dashboard">
-                    <i class="bi bi-grid-1x2"></i> Dashboard
-                </a>
-                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-bookings">
-                    <i class="bi bi-suitcase-lg"></i> My Bookings
-                </a>
-                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-saved">
-                    <i class="bi bi-heart"></i> Saved Villas
-                </a>
-                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-chat">
-                    <i class="bi bi-chat-text"></i> Concierge Chat
-                    <span class="badge bg-danger rounded-pill ms-auto">2</span>
-                </a>
-                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-profile">
-                    <i class="bi bi-person"></i> Profile
-                </a>
-                <a href="#" class="sidebar-link text-decoration-none" data-target="pane-settings">
-                    <i class="bi bi-gear"></i> Settings
-                </a>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#" class="sidebar-link active" data-target="pane-dashboard">
+                            <i class="bi bi-grid"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link" data-target="pane-bookings">
+                            <i class="bi bi-calendar3"></i>
+                            <span>My Bookings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link" data-target="pane-saved">
+                            <i class="bi bi-heart"></i>
+                            <span>Saved Villas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link" data-target="pane-chat">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Concierge Chat</span>
+                        </a>
+                    </li>
+                    <li class="mt-4 pt-4 border-top">
+                        <a href="#" class="sidebar-link" data-target="pane-profile">
+                            <i class="bi bi-person"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link" data-target="pane-settings">
+                            <i class="bi bi-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
 
-            <div class="mt-auto p-4 border-top">
-                <a href="login.html" class="sidebar-link text-danger p-0 text-decoration-none bg-transparent">
-                    <i class="bi bi-box-arrow-right text-danger"></i> Log Out
+            <div class="sidebar-footer p-4 border-top mt-auto">
+                <a href="index.html" class="sidebar-link p-0 border-0 opacity-75 hover-opacity-100">
+                    <i class="bi bi-box-arrow-left"></i>
+                    <span>Sign Out</span>
                 </a>
             </div>
         </aside>
@@ -80,9 +79,9 @@
             <header
                 class="dashboard-header bg-body p-3 p-md-4 rounded-4 shadow-sm border mb-4 d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center gap-3">
-                    <a href="index.html" class="d-lg-none">
-                        <img src="images/logo-premium.svg" alt="LuxeVillas" height="35" class="d-dark-none">
-                        <img src="images/logo-premium-white.svg" alt="LuxeVillas" height="35" class="d-dark-block">
+                    <a href="index.html" class="d-lg-none d-flex align-items-center gap-2 text-decoration-none">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="35" height="35">
+                        <span class="brand-name">LuxeVillas</span>
                     </a>
                 </div>
 
@@ -168,7 +167,8 @@
                 <div class="row g-4 mb-4">
                     <div class="col-lg-8">
                         <div class="bg-body border rounded-4 shadow-sm overflow-hidden">
-                            <div class="p-4 border-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                            <div
+                                class="p-4 border-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
                                 <h5 class="m-0 text-center text-md-start">Upcoming Itineraries</h5>
                                 <a href="#" class="btn btn-sm btn-outline-primary">View All</a>
                             </div>
@@ -275,7 +275,8 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body p-4">
-                                        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-start mb-2">
+                                        <div
+                                            class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-start mb-2">
                                             <h5 class="card-title mb-0 text-center text-md-start">Emerald Bay Villa</h5>
                                             <span
                                                 class="badge bg-success bg-opacity-10 text-success border border-success mt-2 mt-md-0">Confirmed</span>
@@ -312,16 +313,21 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body p-4">
-                                        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-start mb-2">
-                                            <h5 class="card-title mb-0 text-muted text-center text-md-start">Royal Palms Retreat</h5>
+                                        <div
+                                            class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-start mb-2">
+                                            <h5 class="card-title mb-0 text-muted text-center text-md-start">Royal Palms
+                                                Retreat</h5>
                                             <span
                                                 class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary mt-2 mt-md-0">Completed</span>
                                         </div>
-                                        <p class="text-muted small mb-3 text-center text-md-start"><i class="bi bi-geo-alt me-1"></i> Gustavia,
+                                        <p class="text-muted small mb-3 text-center text-md-start"><i
+                                                class="bi bi-geo-alt me-1"></i> Gustavia,
                                             St. Barts</p>
-                                        <p class="small mb-0 text-center text-md-start">Stayed: Jan 10 - Jan 17, 2025</p>
+                                        <p class="small mb-0 text-center text-md-start">Stayed: Jan 10 - Jan 17, 2025
+                                        </p>
                                         <div class="text-center text-md-start">
-                                            <button class="btn btn-outline-secondary btn-sm mt-3 px-4">Rebook Villa</button>
+                                            <button class="btn btn-outline-secondary btn-sm mt-3 px-4">Rebook
+                                                Villa</button>
                                         </div>
                                     </div>
                                 </div>
@@ -336,8 +342,8 @@
                 <div class="row g-4">
                     <div class="col-md-6 col-xl-4">
                         <div class="property-card border rounded-4 overflow-hidden shadow-sm h-100">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=400&q=80"
+                            <div class="property-img-container">
+                                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80"
                                     class="img-fluid" alt="The Sapphire Loft">
                                 <button
                                     class="btn btn-white btn-sm rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"><i
@@ -356,8 +362,8 @@
                     </div>
                     <div class="col-md-6 col-xl-4">
                         <div class="property-card border rounded-4 overflow-hidden shadow-sm h-100">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=400&q=80"
+                            <div class="property-img-container">
+                                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=600&q=80"
                                     class="img-fluid" alt="Ocean Pearl Estate">
                                 <button
                                     class="btn btn-white btn-sm rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"><i
@@ -376,8 +382,8 @@
                     </div>
                     <div class="col-md-6 col-xl-4">
                         <div class="property-card border rounded-4 overflow-hidden shadow-sm h-100">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80"
+                            <div class="property-img-container">
+                                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
                                     class="img-fluid" alt="Veridian Cliffside">
                                 <button
                                     class="btn btn-white btn-sm rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"><i
@@ -449,7 +455,9 @@
                         <!-- User Message -->
                         <div class="d-flex gap-3 mb-4 justify-content-end">
                             <div class="bg-primary text-white p-3 rounded-4 shadow-sm" style="max-width: 75%;">
-                                <p class="mb-0 text-white">Hi Elena! That sounds wonderful. A VIP transfer would be great. We'll be
+                                <p class="mb-0 text-white">Hi Elena! That sounds wonderful. A VIP transfer would be
+                                    great.
+                                    We'll be
                                     arriving at 2 PM.</p>
                                 <small class="text-white opacity-75 d-block mt-1">11:15 AM</small>
                             </div>

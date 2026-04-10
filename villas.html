@@ -22,15 +22,13 @@
 </head>
 
 <body>
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
 
     <header class="site-header scrolled border-bottom">
         <div class="container">
             <nav class="navbar navbar-expand-xl">
-                <a class="navbar-brand m-0" href="index.html">
-                    <img src="images/logo-premium.svg" alt="LuxeVillas" height="45" class="site-logo">
+                <a class="navbar-brand m-0 d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="45" height="45">
+                    <span class="brand-name">LuxeVillas</span>
                 </a>
                 <div class="d-flex align-items-center d-xl-none gap-2">
                     <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
@@ -114,17 +112,20 @@
             <img src="images/leaf-premium.svg" class="decorative-leaf leaf-right-static" alt="">
         </div>
         <div class="container">
-            <article class="filter-actions d-flex flex-wrap justify-content-between align-items-center mb-5 animate-fade gap-3">
+            <article
+                class="filter-actions d-flex flex-wrap justify-content-between align-items-center mb-5 animate-fade gap-3">
                 <div class="d-flex align-items-center gap-3">
                     <p class="m-0 text-muted">Showing <strong>1-6</strong> of <strong>150+</strong> properties</p>
-                    <button class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
+                    <button class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2 d-lg-none"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
                         <i class="bi bi-sliders"></i>
                         <span>Filter</span>
                     </button>
                 </div>
-                
+
                 <div class="dropdown">
-                    <button class="btn filter-dropdown-btn text-start d-flex justify-content-between align-items-center gap-3"
+                    <button
+                        class="btn filter-dropdown-btn text-start d-flex justify-content-between align-items-center gap-3"
                         type="button" data-bs-toggle="dropdown">
                         <span>Sort by: Recommended</span>
                         <i class="bi bi-chevron-down small opacity-50"></i>
@@ -149,7 +150,9 @@
                         <div class="mb-4">
                             <label class="form-label fw-bold small text-uppercase">Destination</label>
                             <div class="dropdown w-100">
-                                <button class="btn filter-dropdown-btn w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+                                <button
+                                    class="btn filter-dropdown-btn w-100 text-start d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="dropdown">
                                     <span>All Destinations</span>
                                     <i class="bi bi-chevron-down small opacity-50"></i>
                                 </button>
@@ -165,11 +168,14 @@
                         <div class="mb-4">
                             <label class="form-label fw-bold small text-uppercase">Bedrooms</label>
                             <div class="btn-group w-100" role="group">
-                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio1_ds" autocomplete="off" checked>
+                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio1_ds"
+                                    autocomplete="off" checked>
                                 <label class="btn btn-outline-filter border-end-0" for="btnradio1_ds">Any</label>
-                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio2_ds" autocomplete="off">
+                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio2_ds"
+                                    autocomplete="off">
                                 <label class="btn btn-outline-filter border-end-0" for="btnradio2_ds">3+</label>
-                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio3_ds" autocomplete="off">
+                                <input type="radio" class="btn-check" name="beds_ds" id="btnradio3_ds"
+                                    autocomplete="off">
                                 <label class="btn btn-outline-filter" for="btnradio3_ds">5+</label>
                             </div>
                         </div>
@@ -200,18 +206,22 @@
 
                 <!-- Grid & Main Content -->
                 <div class="col-lg-9 col-12">
-                    
+
                     <!-- Offcanvas Filter Sidebar (Mobile Only) -->
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="filterSidebar" aria-labelledby="filterSidebarLabel">
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="filterSidebar"
+                        aria-labelledby="filterSidebarLabel">
                         <div class="offcanvas-header border-bottom">
                             <h5 class="offcanvas-title" id="filterSidebarLabel">Filter Villas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body p-4">
                             <div class="mb-4">
                                 <label class="form-label fw-bold small text-uppercase">Destination</label>
                                 <div class="dropdown w-100">
-                                    <button class="btn filter-dropdown-btn w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+                                    <button
+                                        class="btn filter-dropdown-btn w-100 text-start d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="dropdown">
                                         <span>All Destinations</span>
                                         <i class="bi bi-chevron-down small opacity-50"></i>
                                     </button>
@@ -227,7 +237,8 @@
                             <div class="mb-4">
                                 <label class="form-label fw-bold small text-uppercase">Bedrooms</label>
                                 <div class="btn-group w-100" role="group">
-                                    <input type="radio" class="btn-check" name="beds" id="btnradio1" autocomplete="off" checked>
+                                    <input type="radio" class="btn-check" name="beds" id="btnradio1" autocomplete="off"
+                                        checked>
                                     <label class="btn btn-outline-filter border-end-0" for="btnradio1">Any</label>
                                     <input type="radio" class="btn-check" name="beds" id="btnradio2" autocomplete="off">
                                     <label class="btn btn-outline-filter border-end-0" for="btnradio2">3+</label>
@@ -257,7 +268,8 @@
                             </div>
 
                             <button class="btn-custom btn-primary w-100 mt-2">Apply Filters</button>
-                            <button class="btn btn-link text-muted w-100 mt-3 small text-decoration-none" data-bs-dismiss="offcanvas">Reset Filters</button>
+                            <button class="btn btn-link text-muted w-100 mt-3 small text-decoration-none"
+                                data-bs-dismiss="offcanvas">Reset Filters</button>
                         </div>
                     </div>
 
@@ -274,7 +286,8 @@
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="mb-0">Villa Azure</h4>
-                                        <span class="fw-bold text-primary">$4,500<span class="small text-muted fw-normal">/nt</span></span>
+                                        <span class="fw-bold text-primary">$4,500<span
+                                                class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 8 Guests</li>
@@ -296,7 +309,8 @@
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="mb-0">The Sanctuary</h4>
-                                        <span class="fw-bold text-primary">$6,200<span class="small text-muted fw-normal">/nt</span></span>
+                                        <span class="fw-bold text-primary">$6,200<span
+                                                class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 12 Guests</li>
@@ -318,7 +332,8 @@
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="mb-0">Palm Estate</h4>
-                                        <span class="fw-bold text-primary">$3,800<span class="small text-muted fw-normal">/nt</span></span>
+                                        <span class="fw-bold text-primary">$3,800<span
+                                                class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 6 Guests</li>
@@ -340,7 +355,8 @@
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="mb-0">Ocean Pearl</h4>
-                                        <span class="fw-bold text-primary">$5,100<span class="small text-muted fw-normal">/nt</span></span>
+                                        <span class="fw-bold text-primary">$5,100<span
+                                                class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 10 Guests</li>
@@ -362,7 +378,8 @@
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="mb-0">Veridian Cliff</h4>
-                                        <span class="fw-bold text-primary">$4,900<span class="small text-muted fw-normal">/nt</span></span>
+                                        <span class="fw-bold text-primary">$4,900<span
+                                                class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 8 Guests</li>
@@ -384,7 +401,8 @@
                                 <div class="property-content">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="mb-0">Luxe Island</h4>
-                                        <span class="fw-bold text-primary">$7,500<span class="small text-muted fw-normal">/nt</span></span>
+                                        <span class="fw-bold text-primary">$7,500<span
+                                                class="small text-muted fw-normal">/nt</span></span>
                                     </div>
                                     <ul class="d-flex gap-3 text-muted small mb-3 p-0 list-unstyled">
                                         <li><i class="bi bi-people me-1"></i> 14 Guests</li>
@@ -396,25 +414,25 @@
                         </div>
                     </div>
 
-            <!-- Pagination -->
-            <nav class="mt-5 d-flex justify-content-center">
-                <ul class="pagination pagination-lg">
-                    <li class="page-item disabled"><a
-                            class="page-link border-0 shadow-sm rounded-circle me-2 text-muted" href="#"><i
-                                class="bi bi-chevron-left"></i></a></li>
-                    <li class="page-item active"><a
-                            class="page-link border-0 shadow-sm rounded-circle mx-1 bg-primary text-white"
-                            href="#">1</a></li>
-                    <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
-                            href="#">2</a></li>
-                    <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
-                            href="#">3</a></li>
-                    <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle ms-2 text-dark"
-                            href="#"><i class="bi bi-chevron-right"></i></a></li>
-                </ul>
-            </nav>
+                    <!-- Pagination -->
+                    <nav class="mt-5 d-flex justify-content-center">
+                        <ul class="pagination pagination-lg">
+                            <li class="page-item disabled"><a
+                                    class="page-link border-0 shadow-sm rounded-circle me-2 text-muted" href="#"><i
+                                        class="bi bi-chevron-left"></i></a></li>
+                            <li class="page-item active"><a
+                                    class="page-link border-0 shadow-sm rounded-circle mx-1 bg-primary text-white"
+                                    href="#">1</a></li>
+                            <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
+                                    href="#">2</a></li>
+                            <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle mx-1 text-dark"
+                                    href="#">3</a></li>
+                            <li class="page-item"><a class="page-link border-0 shadow-sm rounded-circle ms-2 text-dark"
+                                    href="#"><i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                    </nav>
 
-        </div>
+                </div>
     </section>
 
     <!-- Footer -->
@@ -422,8 +440,10 @@
         <div class="container">
             <div class="row g-5 mb-5 pb-4 border-bottom border-secondary border-opacity-50">
                 <div class="col-lg-4 text-center text-lg-start">
-                    <a href="index.html" class="d-inline-block mb-lg-0 mb-4 text-decoration-none">
-                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" height="45" class="site-logo">
+                    <a class="navbar-brand m-0 mb-4 d-flex align-items-center justify-content-center justify-content-lg-start gap-2 text-white"
+                        href="index.html">
+                        <img src="images/logo-premium.svg" alt="LuxeVillas Logo" width="45" height="45">
+                        <span class="brand-name text-white">LuxeVillas</span>
                     </a>
                     <p class="text-white-50 mb-4 pe-lg-4">Experience unparalleled luxury, private chefs, and
                         personalized itineraries at the finest vacation rentals in the Caribbean.</p>
@@ -477,4 +497,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
