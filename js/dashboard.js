@@ -30,9 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close sidebar on mobile when clicking outside
     document.addEventListener('click', (e) => {
-        if (window.innerWidth <= 991.98 && sidebar && sidebar.classList.contains('show')) {
-            if (!sidebar.contains(e.target)) {
+        if (sidebar && sidebar.classList.contains('show')) {
+            if (!sidebar.contains(e.target) && !sidebarOpen.contains(e.target)) {
                 sidebar.classList.remove('show');
+                if (sidebarOverlay) sidebarOverlay.classList.remove('show');
             }
         }
     });

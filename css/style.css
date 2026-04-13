@@ -485,7 +485,6 @@ body.loaded #loader {
 
 .site-header.scrolled {
   background-color: var(--header-bg);
-  backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
@@ -1569,8 +1568,7 @@ body .site-footer {
 .sidebar-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1040;
   opacity: 0;
   visibility: hidden;
