@@ -3040,3 +3040,35 @@ body::before {
 .auth-nav-external button {
   pointer-events: auto;
 }
+
+/* Authentication Page Password Toggle Refinements */
+.password-toggle-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-toggle-wrapper .form-control {
+  padding-right: 45px !important;
+  margin-bottom: 0 !important;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  color: var(--text-muted);
+  transition: var(--transition);
+  z-index: 5;
+}
+
+.password-toggle-icon:hover {
+  color: var(--pr-color);
+}
+
+[data-theme="dark"] .password-toggle-icon {
+  color: var(--text-muted);
+}
